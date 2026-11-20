@@ -1,0 +1,35 @@
+{
+  "target": "var2d",
+  "mode": "mle",
+  "circuit": "B0",
+  "id": 0,
+  "n_params": 266,
+  "n_qubits": 16,
+  "objective": 0.48277933752404856,
+  "adam_objective": 1.0265341480085999,
+  "steps": 6500,
+  "lbfgs_iters": 6000,
+  "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+  "wall_time": 691.5461366176605,
+  "fit": {
+    "adam_steps": 500,
+    "lbfgs_iters": 6000
+  },
+  "metrics": {
+    "weighted_tv": 0.3192154721474312,
+    "stationary_tv": 0.32838936636153754,
+    "tail_tv": 0.6759860781482285,
+    "lag1_0": 0.6685800544759107,
+    "lag1_exact_0": 0.7999401086649416,
+    "acf_err_0": 0.16869004365742984,
+    "cond_mean_rmse_0": 0.12193588849469479,
+    "cond_sd_rel_0": 0.2492051580898357,
+    "lag1_1": 0.6437090399752291,
+    "lag1_exact_1": 0.8685974773558878,
+    "acf_err_1": 0.3341733101388152,
+    "cond_mean_rmse_1": 0.24772212793959825,
+    "cond_sd_rel_1": 0.5325832953975351,
+    "corr_err": -0.70676567667301
+  },
+  "tight_pass": false
+}

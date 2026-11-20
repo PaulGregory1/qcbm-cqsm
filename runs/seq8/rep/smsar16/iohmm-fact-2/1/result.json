@@ -1,0 +1,21 @@
+{
+ "exp": "rep",
+ "dataset": "smsar16",
+ "kind": "smsar",
+ "N": 16,
+ "seed": 730,
+ "model": "iohmm-fact-2",
+ "init": 1,
+ "cap_seconds": 1800,
+ "S": 2,
+ "filter_dim": 2,
+ "n_params": 2048,
+ "em_iters": 1767,
+ "capped": false,
+ "train_ll": -2.4148454699610133,
+ "truth_train_ll": -2.39142568978455,
+ "truth_test_ll": -2.36741854557496,
+ "heldout_kl_rate": 0.03866494424316582,
+ "heldout_se": 0.0005006650947916103,
+ "wall_time": 7.017454385757446
+}

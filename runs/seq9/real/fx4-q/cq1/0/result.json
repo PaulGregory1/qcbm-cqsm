@@ -1,0 +1,23 @@
+{
+ "stage1_init": 0,
+ "init_ll": -4.694732683665883,
+ "stop_iter": 0,
+ "lbfgs_iters": 0,
+ "lbfgs_message": "wall-clock cap",
+ "capped": true,
+ "adam_ll": -4.637926908866187,
+ "val_curve": [],
+ "best_val": -5.000375322333385,
+ "n_params": 569,
+ "fit_ll": -4.637926908866187,
+ "train_ll": -4.637704476425639,
+ "val_ll": -5.000375322333385,
+ "test_ll": -4.732927069153903,
+ "part": "real",
+ "dataset": "fx4-q",
+ "model": "cq1",
+ "init": 0,
+ "stage": 2,
+ "wall_time": 10892.17244052887,
+ "device": "cpu"
+}

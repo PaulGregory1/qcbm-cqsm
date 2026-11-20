@@ -1,0 +1,23 @@
+{
+ "S": 1,
+ "kernel": "rbm17",
+ "filter_dim": 1,
+ "n_params": 217,
+ "n_kernel": 217,
+ "init_ll": -3.0886502351546614,
+ "adam_ll": -2.5155314272602136,
+ "lbfgs_iters": 2000,
+ "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+ "capped": false,
+ "train_ll": -2.4573650415157484,
+ "truth_train_ll": -2.3186747212331142,
+ "truth_test_ll": -2.2706818391183408,
+ "heldout_kl_rate": 0.15471679576206068,
+ "heldout_se": 0.0014813428988195787,
+ "part": "synth",
+ "dataset": "msar",
+ "model": "k-rbm17",
+ "init": 2,
+ "stage": 1,
+ "wall_time": 17.93314003944397
+}

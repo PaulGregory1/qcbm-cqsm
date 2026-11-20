@@ -1,0 +1,17 @@
+{
+ "em_iters": 953,
+ "stop_iter": 0,
+ "train_ll_em": -5.097373822975453,
+ "n_params": 4092,
+ "fit_ll": -5.588562283567954,
+ "train_ll": -5.588511078501329,
+ "val_ll": -5.574542952234865,
+ "test_ll": -5.58522461041657,
+ "part": "real",
+ "dataset": "eurjpy-q",
+ "model": "hmm-S4",
+ "init": 2,
+ "stage": 1,
+ "wall_time": 1480.1895790100098,
+ "device": "cpu"
+}

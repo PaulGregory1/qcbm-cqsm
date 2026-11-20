@@ -1,0 +1,23 @@
+{
+ "S": 1,
+ "kernel": "rbm8",
+ "filter_dim": 1,
+ "n_params": 118,
+ "n_kernel": 118,
+ "init_ll": -3.150346993782969,
+ "adam_ll": -2.542269235630757,
+ "lbfgs_iters": 2000,
+ "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+ "capped": false,
+ "train_ll": -2.4734298471296716,
+ "truth_train_ll": -2.39142568978455,
+ "truth_test_ll": -2.36741854557496,
+ "heldout_kl_rate": 0.08960199925677612,
+ "heldout_se": 0.0007204302901440746,
+ "part": "synth",
+ "dataset": "smsar16",
+ "model": "k-rbm8",
+ "init": 2,
+ "stage": 1,
+ "wall_time": 13.132975101470947
+}

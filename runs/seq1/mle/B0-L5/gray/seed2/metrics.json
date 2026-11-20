@@ -1,0 +1,29 @@
+{
+  "circuit": "B0-L5",
+  "variant": "B0",
+  "n_layers": 5,
+  "n_params": 195,
+  "encoding": "gray",
+  "seed": 2,
+  "mode": "mle",
+  "steps": 18260,
+  "final_data_kl": 0.003869953889558131,
+  "adam_data_kl": 0.07762559622169163,
+  "lbfgs_iters": 16260,
+  "wall_time": 169.50761127471924,
+  "metrics": {
+    "weighted_tv": 0.018123491725453855,
+    "tail_tv": 0.22150296299533215,
+    "stationary_tv": 0.009639864301423834,
+    "lag1_acf": 0.8921316861082194,
+    "lag1_acf_exact": 0.9048120579807228,
+    "acf_err": 0.042074831096335974,
+    "slope": 0.8938551047765203,
+    "flux_ratio_depth5": 1.021392233105862,
+    "flux_ratio_depth4": 0.9920906842247688,
+    "flux_ratio_depth3": 1.035565005133265,
+    "flux_ratio_depth1-2": 1.0269920967375166,
+    "bulk_row_tv_near_deep": 0.017380332243864583,
+    "bulk_row_tv_other": 0.01464141833866724
+  }
+}

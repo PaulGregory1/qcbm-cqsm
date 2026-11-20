@@ -1,0 +1,26 @@
+{
+ "oracle_kind": "mix1",
+ "train_ll": -3.5745330467777814,
+ "lbfgs_iters": 0,
+ "capped": false,
+ "lbfgs_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+ "n_params": 2,
+ "kl": 4.600910594154513e-06,
+ "0.01": {
+  "ckl": 1.437558928882879e-06,
+  "ratio": 1.0137920998813381,
+  "ratio_lower": 1.017214527628401,
+  "mass": 0.01349944089946038
+ },
+ "0.001": {
+  "ckl": 1.2094525110490663e-07,
+  "ratio": 1.028033631922817,
+  "ratio_lower": 1.032822400243067,
+  "mass": 0.0003024255332125246
+ },
+ "level": 1,
+ "dataset": "gauss-g-n100000-s1",
+ "model": "oracle",
+ "init": 0,
+ "wall_time": 1.4815149307250977
+}

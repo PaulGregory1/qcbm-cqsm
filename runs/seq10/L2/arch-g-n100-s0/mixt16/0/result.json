@@ -1,0 +1,25 @@
+{
+ "train_ll": -3.4245518520033156,
+ "lbfgs_iters": 1764,
+ "capped": false,
+ "lbfgs_message": "STOP: TOTAL NO. OF F,G EVALUATIONS EXCEEDS LIMIT",
+ "n_params": 110,
+ "kl": 0.019396532280225733,
+ "0.01": {
+  "ckl": 0.0031132892518570317,
+  "ratio": 1.053186025653627,
+  "stat_ckl": 0.32506667376067183,
+  "stat_ratio": 22.668129461563403
+ },
+ "0.001": {
+  "ckl": 0.0009139590218077312,
+  "ratio": 1.7389839666575366,
+  "stat_ckl": 0.3247854884965799,
+  "stat_ratio": 214.83173991412843
+ },
+ "level": 2,
+ "dataset": "arch-g-n100-s0",
+ "model": "mixt16",
+ "init": 0,
+ "wall_time": 246.65791583061218
+}

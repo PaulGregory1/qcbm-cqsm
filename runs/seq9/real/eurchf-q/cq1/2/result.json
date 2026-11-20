@@ -1,0 +1,23 @@
+{
+ "stage1_init": 2,
+ "init_ll": -4.772756108412735,
+ "stop_iter": 0,
+ "lbfgs_iters": 0,
+ "lbfgs_message": "wall-clock cap",
+ "capped": true,
+ "adam_ll": -4.71301526980221,
+ "val_curve": [],
+ "best_val": -5.076618160773361,
+ "n_params": 521,
+ "fit_ll": -4.71301526980221,
+ "train_ll": -4.712977440541889,
+ "val_ll": -5.076618160773361,
+ "test_ll": -5.1198307516577515,
+ "part": "real",
+ "dataset": "eurchf-q",
+ "model": "cq1",
+ "init": 2,
+ "stage": 2,
+ "wall_time": 19614.63711953163,
+ "device": "cpu"
+}

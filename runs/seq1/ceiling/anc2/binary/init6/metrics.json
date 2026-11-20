@@ -1,0 +1,30 @@
+{
+  "circuit": "anc2",
+  "variant": "anc2",
+  "n_layers": 3,
+  "n_params": 215,
+  "encoding": "binary",
+  "init": 6,
+  "noise": 0.5,
+  "steps": 22000,
+  "final_kl": 0.0003694843258457148,
+  "wall_time": 452.9298584461212,
+  "adam_kl": 0.009471477180513332,
+  "lbfgs_iters": 20000,
+  "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+  "metrics": {
+    "weighted_tv": 0.0038175279715461615,
+    "tail_tv": 0.034843996554957415,
+    "stationary_tv": 0.001987224663278176,
+    "lag1_acf": 0.9042217070052296,
+    "lag1_acf_exact": 0.9048120579807228,
+    "acf_err": 0.0013158215862021927,
+    "slope": 0.9044506459787452,
+    "flux_ratio_depth5": 0.9993332126120431,
+    "flux_ratio_depth4": 1.005002742833793,
+    "flux_ratio_depth3": 1.0007238748690013,
+    "flux_ratio_depth1-2": 1.0027139543143249,
+    "bulk_row_tv_near_deep": 0.00428305645198536,
+    "bulk_row_tv_other": 0.0027720133715282173
+  }
+}

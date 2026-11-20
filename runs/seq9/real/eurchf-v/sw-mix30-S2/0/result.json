@@ -1,0 +1,36 @@
+{
+ "stage1_init": 0,
+ "init_ll": -3.574686759486008,
+ "stop_iter": 25,
+ "lbfgs_iters": 91,
+ "lbfgs_message": "wall-clock cap",
+ "capped": true,
+ "adam_ll": -3.390675146972498,
+ "val_curve": [
+  [
+   25,
+   -4.0268253254345705
+  ],
+  [
+   50,
+   -4.029902300306527
+  ],
+  [
+   75,
+   -4.02881703321913
+  ]
+ ],
+ "best_val": -4.0268253254345705,
+ "n_params": 912,
+ "fit_ll": -3.3883362846214355,
+ "train_ll": -3.3883403892060207,
+ "val_ll": -4.026825325434571,
+ "test_ll": -4.03880207778794,
+ "part": "real",
+ "dataset": "eurchf-v",
+ "model": "sw-mix30-S2",
+ "init": 0,
+ "stage": 2,
+ "wall_time": 10835.249149560928,
+ "device": "cpu"
+}

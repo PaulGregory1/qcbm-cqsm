@@ -1,0 +1,30 @@
+{
+  "circuit": "allpairs",
+  "variant": "allpairs",
+  "n_layers": 3,
+  "n_params": 155,
+  "encoding": "gray",
+  "init": 2,
+  "noise": 0.2,
+  "steps": 4566,
+  "final_kl": 0.040119099915307155,
+  "wall_time": 69.65980839729309,
+  "adam_kl": 0.07753494514647952,
+  "lbfgs_iters": 2566,
+  "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "metrics": {
+    "weighted_tv": 0.07363756545295252,
+    "tail_tv": 0.2779674947187778,
+    "stationary_tv": 0.050269240893511466,
+    "lag1_acf": 0.8184445589936975,
+    "lag1_acf_exact": 0.9048120579807228,
+    "acf_err": 0.19603949481327199,
+    "slope": 0.8616548676475242,
+    "flux_ratio_depth5": 1.0213064442873483,
+    "flux_ratio_depth4": 1.147962231922605,
+    "flux_ratio_depth3": 1.0951034952036558,
+    "flux_ratio_depth1-2": 1.1364135807705775,
+    "bulk_row_tv_near_deep": 0.06607932668610629,
+    "bulk_row_tv_other": 0.07287972304010087
+  }
+}

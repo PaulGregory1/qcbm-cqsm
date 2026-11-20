@@ -1,0 +1,25 @@
+{
+ "train_ll": -3.207351724660735,
+ "lbfgs_iters": 2000,
+ "capped": false,
+ "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+ "n_params": 63,
+ "kl": 0.00014363716279004236,
+ "0.01": {
+  "ckl": 3.087755211992672e-05,
+  "ratio": 0.95763302933989,
+  "ratio_lower": 0.976056363694718,
+  "mass": 0.01963065725729065
+ },
+ "0.001": {
+  "ckl": 6.1032513865616245e-06,
+  "ratio": 0.9608880240420203,
+  "ratio_lower": 0.9092002528229023,
+  "mass": 0.001541969568939995
+ },
+ "level": 1,
+ "dataset": "gauss-u-n100000-s1",
+ "model": "mixt16",
+ "init": 1,
+ "wall_time": 29.77811336517334
+}

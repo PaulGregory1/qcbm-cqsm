@@ -1,0 +1,29 @@
+{
+  "target": "arch",
+  "mode": "ceiling",
+  "circuit": "B0",
+  "id": 4,
+  "n_params": 119,
+  "n_qubits": 10,
+  "objective": 0.032640007989014785,
+  "adam_objective": 0.07093049809542107,
+  "steps": 8864,
+  "lbfgs_iters": 6864,
+  "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "wall_time": 86.40015172958374,
+  "fit": {
+    "adam_steps": 2000,
+    "lbfgs_iters": 20000
+  },
+  "metrics": {
+    "weighted_tv": 0.0830202276341891,
+    "stationary_tv": 0.034653454698603106,
+    "tail_tv": 0.2523793532801763,
+    "lag1_0": 0.7190870894995787,
+    "lag1_exact_0": 0.767098285731209,
+    "acf_err_0": 0.07825337111181696,
+    "cond_mean_rmse_0": 0.09970164016860715,
+    "cond_sd_rel_0": 0.1285865992593698
+  },
+  "tight_pass": false
+}

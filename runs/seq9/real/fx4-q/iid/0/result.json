@@ -1,0 +1,14 @@
+{
+ "n_params": 255,
+ "fit_ll": -4.71190356768963,
+ "train_ll": -4.711640955374696,
+ "val_ll": -4.980854474648897,
+ "test_ll": -4.743687294314395,
+ "part": "real",
+ "dataset": "fx4-q",
+ "model": "iid",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 2.026362895965576,
+ "device": "cpu"
+}

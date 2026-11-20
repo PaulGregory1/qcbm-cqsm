@@ -1,0 +1,25 @@
+{
+ "train_ll": -3.5655153063327383,
+ "lbfgs_iters": 443,
+ "capped": false,
+ "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "n_params": 84,
+ "kl": 0.011756742816917376,
+ "0.01": {
+  "ckl": 0.002554337431510933,
+  "ratio": 1.2663762871345567,
+  "ratio_lower": 0.8949071196196144,
+  "mass": 0.014718807160320306
+ },
+ "0.001": {
+  "ckl": 0.0007444458160860309,
+  "ratio": 2.7849906133028757,
+  "ratio_lower": 2.25961192308352,
+  "mass": 0.0007044819361953615
+ },
+ "level": 1,
+ "dataset": "jump-g-n1000-s1",
+ "model": "mps3",
+ "init": 1,
+ "wall_time": 7.745960712432861
+}

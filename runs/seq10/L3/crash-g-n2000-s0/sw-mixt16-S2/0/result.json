@@ -1,0 +1,36 @@
+{
+ "stage1_init": 1,
+ "train_ll": -3.32086916299448,
+ "lbfgs_iters": 1105,
+ "capped": false,
+ "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "n_params": 234,
+ "truth_train_ll": -3.3221263609156497,
+ "kl_rate": [
+  0.0011536493403041515,
+  0.00019678857024411225
+ ],
+ "0.01": {
+  "ckl_rate": [
+   0.0002841932089727514,
+   9.842951944686698e-05
+  ],
+  "ratio": 1.0322352444470169,
+  "abs_log_ratio": 0.08838866143501886,
+  "mass": 0.0172300217549323
+ },
+ "0.001": {
+  "ckl_rate": [
+   1.907233891508755e-05,
+   4.568501551159866e-05
+  ],
+  "ratio": 1.0329690466451487,
+  "abs_log_ratio": 0.16474900386837776,
+  "mass": 0.0011438375675078382
+ },
+ "level": 3,
+ "dataset": "crash-g-n2000-s0",
+ "model": "sw-mixt16-S2",
+ "init": 0,
+ "wall_time": 498.09882616996765
+}

@@ -1,0 +1,17 @@
+{
+ "em_iters": 499,
+ "stop_iter": 40,
+ "train_ll_em": -4.19807212146937,
+ "n_params": 131072,
+ "fit_ll": -4.198704693272309,
+ "train_ll": -4.1985702440628465,
+ "val_ll": -4.7728397598821015,
+ "test_ll": -4.539473345764526,
+ "part": "real",
+ "dataset": "eurgbp-v",
+ "model": "iohmm-fact-S2",
+ "init": 2,
+ "stage": 1,
+ "wall_time": 433.71376299858093,
+ "device": "cpu"
+}

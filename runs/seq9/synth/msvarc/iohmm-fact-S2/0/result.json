@@ -1,0 +1,14 @@
+{
+ "em_iters": 46,
+ "train_ll_em": -3.3609538762840034,
+ "n_params": 131072,
+ "fit_ll": -3.3877774989736356,
+ "train_ll": -3.3877774989736356,
+ "part": "synth",
+ "dataset": "msvarc",
+ "model": "iohmm-fact-S2",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 7.292709827423096,
+ "device": "cpu"
+}

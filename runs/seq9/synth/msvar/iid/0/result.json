@@ -1,0 +1,12 @@
+{
+ "n_params": 255,
+ "fit_ll": -4.467510448295281,
+ "train_ll": -4.467510448295281,
+ "part": "synth",
+ "dataset": "msvar",
+ "model": "iid",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 1.7002224922180176,
+ "device": "cpu"
+}

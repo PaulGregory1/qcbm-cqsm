@@ -1,0 +1,18 @@
+{
+ "stage1_init": 1,
+ "init_ll": -3.221713156833328,
+ "adam_loss": 2.990657999457639,
+ "lbfgs_iters": 276,
+ "lbfgs_message": "wall-clock cap",
+ "capped": true,
+ "n_params": 912,
+ "fit_ll": -2.9847259989841572,
+ "train_ll": -2.9847259989841572,
+ "part": "synth",
+ "dataset": "msvar",
+ "model": "sw-mix30-S2",
+ "init": 0,
+ "stage": 2,
+ "wall_time": 10837.796127796173,
+ "device": "cpu"
+}

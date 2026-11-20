@@ -1,0 +1,59 @@
+{
+  "adam_done": true,
+  "lbfgs_iters": 10000,
+  "converged": false,
+  "wall_time": 12379.889471530914,
+  "segments": [
+    {
+      "iters": 1000,
+      "objective": 0.030209531140747536,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "iters": 1000,
+      "objective": 0.022950267171117034,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "iters": 1000,
+      "objective": 0.01994720424364882,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "iters": 1000,
+      "objective": 0.018719576586478492,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "iters": 1000,
+      "objective": 0.017588164058823352,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "iters": 1000,
+      "objective": 0.01690093867648912,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "iters": 1000,
+      "objective": 0.016526710908174813,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "iters": 1000,
+      "objective": 0.01594325789787021,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "iters": 1000,
+      "objective": 0.015887044267885564,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "iters": 1000,
+      "objective": 0.015871273058635005,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    }
+  ],
+  "adam_objective": 0.11349170044319568
+}

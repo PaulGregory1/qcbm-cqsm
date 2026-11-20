@@ -1,0 +1,30 @@
+{
+  "target": "arch",
+  "mode": "train",
+  "circuit": "anc2",
+  "id": 0,
+  "n_params": 215,
+  "n_qubits": 12,
+  "objective": 0.007448077486224603,
+  "init_loss": 0.7997764207201277,
+  "steps": 407,
+  "wall_time": 98.74041271209717,
+  "settings": {
+    "steps": 1500,
+    "lr": 0.03,
+    "eps": 0.01,
+    "sinkhorn_iters": 100,
+    "stop_smooth": 25
+  },
+  "metrics": {
+    "weighted_tv": 0.10785698330843094,
+    "stationary_tv": 0.03853000518611522,
+    "tail_tv": 0.31945730779507214,
+    "lag1_0": 0.756681550152357,
+    "lag1_exact_0": 0.767098285731209,
+    "acf_err_0": 0.011729934006773246,
+    "cond_mean_rmse_0": 0.10740075621108884,
+    "cond_sd_rel_0": 0.038758179736036694
+  },
+  "tight_pass": false
+}

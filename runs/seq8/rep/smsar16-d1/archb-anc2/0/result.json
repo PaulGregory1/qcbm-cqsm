@@ -1,0 +1,22 @@
+{
+ "exp": "rep",
+ "dataset": "smsar16-d1",
+ "kind": "smsar",
+ "N": 16,
+ "seed": 910,
+ "model": "archb-anc2",
+ "init": 0,
+ "cap_seconds": 1800,
+ "filter_dim": 1,
+ "n_params": 215,
+ "adam_ll": -2.4849508492640173,
+ "lbfgs_iters": 10954,
+ "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "capped": false,
+ "train_ll": -2.4504692551862077,
+ "truth_train_ll": -2.3895249957395372,
+ "truth_test_ll": -2.3695882175506564,
+ "heldout_kl_rate": 0.0689718718233546,
+ "heldout_se": 0.0007549529416104244,
+ "wall_time": 83.08939957618713
+}

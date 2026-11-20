@@ -1,0 +1,12 @@
+{
+ "n_params": 65280,
+ "fit_ll": -3.2559045992959423,
+ "train_ll": -3.2559045992959423,
+ "part": "synth",
+ "dataset": "msvar",
+ "model": "markov1",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 3.776569128036499,
+ "device": "cpu"
+}

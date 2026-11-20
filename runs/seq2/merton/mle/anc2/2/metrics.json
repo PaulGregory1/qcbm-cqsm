@@ -1,0 +1,29 @@
+{
+  "target": "merton",
+  "mode": "mle",
+  "circuit": "anc2",
+  "id": 2,
+  "n_params": 215,
+  "n_qubits": 12,
+  "objective": 0.0186389270990428,
+  "adam_objective": 0.03760707624111914,
+  "steps": 5929,
+  "lbfgs_iters": 3929,
+  "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "wall_time": 136.40490770339966,
+  "fit": {
+    "adam_steps": 2000,
+    "lbfgs_iters": 20000
+  },
+  "metrics": {
+    "weighted_tv": 0.04804645538422818,
+    "stationary_tv": 0.0220448707541731,
+    "tail_tv": 0.26467447367411523,
+    "lag1_0": 0.8316589210208748,
+    "lag1_exact_0": 0.8996134733710737,
+    "acf_err_0": 0.14184439091570017,
+    "cond_mean_rmse_0": 0.0683543419715588,
+    "cond_sd_rel_0": 0.1770109201207291
+  },
+  "tight_pass": false
+}

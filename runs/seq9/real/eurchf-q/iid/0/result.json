@@ -1,0 +1,14 @@
+{
+ "n_params": 255,
+ "fit_ll": -4.762693902177224,
+ "train_ll": -4.762631217940189,
+ "val_ll": -5.056113862368225,
+ "test_ll": -5.088451818983616,
+ "part": "real",
+ "dataset": "eurchf-q",
+ "model": "iid",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 2.2903268337249756,
+ "device": "cpu"
+}

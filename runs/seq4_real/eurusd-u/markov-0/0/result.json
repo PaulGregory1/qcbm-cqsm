@@ -1,0 +1,12 @@
+{
+ "dataset": "eurusd-u",
+ "model": "markov-0",
+ "init": 0,
+ "fit_ll": -2.7693174869828368,
+ "train_ll": -2.769114498724985,
+ "val_ll": -2.437111538273877,
+ "test_ll": -2.534766099886641,
+ "memory_dim": 1,
+ "n_params": 31,
+ "wall_time": 0.6547927856445312
+}

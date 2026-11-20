@@ -1,0 +1,13 @@
+[project]
+name = "archb"
+version = "0.1.0"
+description = "Conditional QCBMs and quantum memories for discretized time series, against classical models of matched size"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "jax", "matplotlib"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,22 @@
+{
+ "exp": "grid",
+ "dataset": "A0995-d0",
+ "kind": "msar",
+ "N": null,
+ "seed": 1160,
+ "model": "archb-anc2",
+ "init": 0,
+ "cap_seconds": 1800,
+ "filter_dim": 1,
+ "n_params": 215,
+ "adam_ll": -2.471080100883836,
+ "lbfgs_iters": 6851,
+ "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "capped": false,
+ "train_ll": -2.4404280446861932,
+ "truth_train_ll": -2.265586427917524,
+ "truth_test_ll": -2.2615965456652996,
+ "heldout_kl_rate": 0.18719368605326991,
+ "heldout_se": 0.001642004710543657,
+ "wall_time": 87.47673273086548
+}

@@ -1,0 +1,26 @@
+{
+  "encoding": "binary",
+  "seed": 1,
+  "steps": 582,
+  "wall_time": 7.7228991985321045,
+  "init_loss": 0.5208986380338217,
+  "final_loss": 0.012035454697845269,
+  "settings": {
+    "steps_max": 800,
+    "lr": 0.03,
+    "eps": 0.01,
+    "noise": 0.2,
+    "sinkhorn_iters": 25,
+    "n_layers": 3,
+    "model": "single"
+  },
+  "metrics": {
+    "weighted_tv": 0.2957816798162589,
+    "tail_tv": 0.39872130163810293,
+    "stationary_tv": 0.5086781363641375,
+    "lag1_acf": 0.9887201829436131,
+    "lag1_acf_exact": 0.9048120579807226,
+    "acf_err": 0.7937451447084327,
+    "slope": 0.9933905665941487
+  }
+}

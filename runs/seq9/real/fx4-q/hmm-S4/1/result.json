@@ -1,0 +1,17 @@
+{
+ "em_iters": 1000,
+ "stop_iter": 10,
+ "train_ll_em": -4.439876169777142,
+ "n_params": 4092,
+ "fit_ll": -4.560593831916502,
+ "train_ll": -4.560279405635473,
+ "val_ll": -5.122754077097814,
+ "test_ll": -4.851952935581527,
+ "part": "real",
+ "dataset": "fx4-q",
+ "model": "hmm-S4",
+ "init": 1,
+ "stage": 1,
+ "wall_time": 945.7182714939117,
+ "device": "cpu"
+}

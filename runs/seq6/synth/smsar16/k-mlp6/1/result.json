@@ -1,0 +1,23 @@
+{
+ "S": 1,
+ "kernel": "mlp6",
+ "filter_dim": 1,
+ "n_params": 229,
+ "n_kernel": 229,
+ "init_ll": -3.079107407438159,
+ "adam_ll": -2.470132846067465,
+ "lbfgs_iters": 2000,
+ "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+ "capped": false,
+ "train_ll": -2.4573790346620896,
+ "truth_train_ll": -2.39142568978455,
+ "truth_test_ll": -2.36741854557496,
+ "heldout_kl_rate": 0.07512691187239885,
+ "heldout_se": 0.0008724053231255078,
+ "part": "synth",
+ "dataset": "smsar16",
+ "model": "k-mlp6",
+ "init": 1,
+ "stage": 1,
+ "wall_time": 22.054425954818726
+}

@@ -1,0 +1,14 @@
+{
+ "n_params": 65280,
+ "fit_ll": -3.75253466599923,
+ "train_ll": -3.7523173370746354,
+ "val_ll": -4.570522759336864,
+ "test_ll": -4.432125556482521,
+ "part": "real",
+ "dataset": "eurchf-v",
+ "model": "markov1",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 2.2751903533935547,
+ "device": "cpu"
+}

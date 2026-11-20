@@ -1,0 +1,17 @@
+{
+ "init_ll": -4.845360354664146,
+ "adam_loss": 3.5772670960376134,
+ "lbfgs_iters": 2000,
+ "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+ "capped": false,
+ "n_params": 446,
+ "fit_ll": -3.4313765931610587,
+ "train_ll": -3.4313765931610587,
+ "part": "synth",
+ "dataset": "msvarc",
+ "model": "k-rbm22",
+ "init": 1,
+ "stage": 1,
+ "wall_time": 1603.5889403820038,
+ "device": "cpu"
+}

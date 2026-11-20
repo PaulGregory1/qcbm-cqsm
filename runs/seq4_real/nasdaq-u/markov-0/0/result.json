@@ -1,0 +1,12 @@
+{
+ "dataset": "nasdaq-u",
+ "model": "markov-0",
+ "init": 0,
+ "fit_ll": -2.6795825768582637,
+ "train_ll": -2.679038149925031,
+ "val_ll": -2.643060130123516,
+ "test_ll": -2.619374340596029,
+ "memory_dim": 1,
+ "n_params": 31,
+ "wall_time": 1.687281847000122
+}

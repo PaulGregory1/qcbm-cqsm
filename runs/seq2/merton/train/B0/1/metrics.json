@@ -1,0 +1,30 @@
+{
+  "target": "merton",
+  "mode": "train",
+  "circuit": "B0",
+  "id": 1,
+  "n_params": 119,
+  "n_qubits": 10,
+  "objective": 0.01749729385358872,
+  "init_loss": 0.7676256309801969,
+  "steps": 905,
+  "wall_time": 107.15547609329224,
+  "settings": {
+    "steps": 1500,
+    "lr": 0.03,
+    "eps": 0.01,
+    "sinkhorn_iters": 100,
+    "stop_smooth": 25
+  },
+  "metrics": {
+    "weighted_tv": 0.20082974294235958,
+    "stationary_tv": 0.21887569304810792,
+    "tail_tv": 0.5002629957075381,
+    "lag1_0": 0.901347305613899,
+    "lag1_exact_0": 0.8996134733710737,
+    "acf_err_0": 0.1502195576842805,
+    "cond_mean_rmse_0": 0.11304778153854858,
+    "cond_sd_rel_0": 0.12364775296038816
+  },
+  "tight_pass": false
+}

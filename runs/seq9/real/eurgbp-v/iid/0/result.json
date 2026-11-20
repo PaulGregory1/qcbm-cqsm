@@ -1,0 +1,14 @@
+{
+ "n_params": 255,
+ "fit_ll": -4.008745306042191,
+ "train_ll": -4.008894875622024,
+ "val_ll": -4.143179044832083,
+ "test_ll": -3.887939689050848,
+ "part": "real",
+ "dataset": "eurgbp-v",
+ "model": "iid",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 2.3065905570983887,
+ "device": "cpu"
+}

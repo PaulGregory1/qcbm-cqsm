@@ -1,0 +1,33 @@
+{
+ "exp": "grid",
+ "dataset": "A050-d1",
+ "kind": "msar",
+ "N": null,
+ "seed": 1102,
+ "model": "family-msar",
+ "init": 0,
+ "cap_seconds": 900,
+ "filter_dim": 2,
+ "n_params": 6,
+ "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+ "params": {
+  "c": [
+   0.9505738657391685,
+   0.6994926638341887
+  ],
+  "sig": [
+   0.29976658013018387,
+   0.9998070602743856
+  ],
+  "stay": [
+   0.4950054990068642,
+   0.5080418753459734
+  ]
+ },
+ "train_ll": -2.451964369003053,
+ "truth_train_ll": -2.451993776466687,
+ "truth_test_ll": -2.436256926689799,
+ "heldout_kl_rate": 1.619690488582685e-05,
+ "heldout_se": 2.1489839622377823e-05,
+ "wall_time": 1.6685230731964111
+}

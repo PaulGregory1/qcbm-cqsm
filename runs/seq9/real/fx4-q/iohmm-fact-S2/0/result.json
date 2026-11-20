@@ -1,0 +1,17 @@
+{
+ "em_iters": 88,
+ "stop_iter": 10,
+ "train_ll_em": -4.491251236622447,
+ "n_params": 131072,
+ "fit_ll": -4.5488236359078895,
+ "train_ll": -4.548611282223576,
+ "val_ll": -5.406931718522296,
+ "test_ll": -5.258715067390707,
+ "part": "real",
+ "dataset": "fx4-q",
+ "model": "iohmm-fact-S2",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 75.73066186904907,
+ "device": "cpu"
+}

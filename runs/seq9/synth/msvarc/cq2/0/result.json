@@ -1,0 +1,18 @@
+{
+ "stage1_init": 2,
+ "init_ll": -3.451188094874476,
+ "adam_loss": 3.261358208201711,
+ "lbfgs_iters": 3000,
+ "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+ "capped": false,
+ "n_params": 608,
+ "fit_ll": -3.214021443858603,
+ "train_ll": -3.214021443858603,
+ "part": "synth",
+ "dataset": "msvarc",
+ "model": "cq2",
+ "init": 0,
+ "stage": 2,
+ "wall_time": 1380.8897943496704,
+ "device": "gpu"
+}

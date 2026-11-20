@@ -1,0 +1,21 @@
+{
+ "exp": "rep",
+ "dataset": "msar-d4",
+ "kind": "msar",
+ "N": null,
+ "seed": 840,
+ "model": "iohmm-fact-2",
+ "init": 0,
+ "cap_seconds": 1800,
+ "S": 2,
+ "filter_dim": 2,
+ "n_params": 2048,
+ "em_iters": 151,
+ "capped": false,
+ "train_ll": -2.3028933080537213,
+ "truth_train_ll": -2.3039702794278782,
+ "truth_test_ll": -2.295491096465107,
+ "heldout_kl_rate": 0.010812243762385477,
+ "heldout_se": 0.00034737410131983204,
+ "wall_time": 0.4367063045501709
+}

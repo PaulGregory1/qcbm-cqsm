@@ -1,0 +1,33 @@
+{
+ "exp": "grid",
+ "dataset": "A080-d0",
+ "kind": "msar",
+ "N": null,
+ "seed": 1120,
+ "model": "family-msar",
+ "init": 0,
+ "cap_seconds": 900,
+ "filter_dim": 2,
+ "n_params": 6,
+ "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "params": {
+  "c": [
+   0.9489378068640457,
+   0.7000455796610684
+  ],
+  "sig": [
+   0.30006776886541014,
+   0.9993924568791949
+  ],
+  "stay": [
+   0.8008012971903183,
+   0.7974976006197917
+  ]
+ },
+ "train_ll": -2.4115554125860665,
+ "truth_train_ll": -2.4115651629411454,
+ "truth_test_ll": -2.4043466564853713,
+ "heldout_kl_rate": 1.046918414065469e-05,
+ "heldout_se": 1.2236373682792157e-05,
+ "wall_time": 3.9623050689697266
+}

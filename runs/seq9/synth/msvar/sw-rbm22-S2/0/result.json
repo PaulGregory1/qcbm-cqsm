@@ -1,0 +1,18 @@
+{
+ "stage1_init": 0,
+ "init_ll": -3.3684251069904,
+ "adam_loss": 3.1102043287416663,
+ "lbfgs_iters": 306,
+ "lbfgs_message": "wall-clock cap",
+ "capped": true,
+ "n_params": 910,
+ "fit_ll": -3.057838616631889,
+ "train_ll": -3.057838616631889,
+ "part": "synth",
+ "dataset": "msvar",
+ "model": "sw-rbm22-S2",
+ "init": 0,
+ "stage": 2,
+ "wall_time": 10818.534552574158,
+ "device": "cpu"
+}

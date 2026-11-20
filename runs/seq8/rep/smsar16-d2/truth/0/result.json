@@ -1,0 +1,17 @@
+{
+ "exp": "rep",
+ "dataset": "smsar16-d2",
+ "kind": "smsar",
+ "N": 16,
+ "seed": 920,
+ "model": "truth",
+ "init": 0,
+ "cap_seconds": 60,
+ "filter_dim": 32,
+ "train_ll": -2.3895801971780677,
+ "truth_train_ll": -2.3895801971780677,
+ "truth_test_ll": -2.3658963633490755,
+ "heldout_kl_rate": 0.0,
+ "heldout_se": 0.0,
+ "wall_time": 0.9995172023773193
+}

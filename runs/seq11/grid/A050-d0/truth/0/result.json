@@ -1,0 +1,17 @@
+{
+ "exp": "grid",
+ "dataset": "A050-d0",
+ "kind": "msar",
+ "N": null,
+ "seed": 1100,
+ "model": "truth",
+ "init": 0,
+ "cap_seconds": 60,
+ "filter_dim": 2,
+ "train_ll": -2.449921300499816,
+ "truth_train_ll": -2.449921300499816,
+ "truth_test_ll": -2.4294084199484596,
+ "heldout_kl_rate": 0.0,
+ "heldout_se": 0.0,
+ "wall_time": 0.597614049911499
+}

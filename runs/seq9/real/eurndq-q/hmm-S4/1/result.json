@@ -1,0 +1,17 @@
+{
+ "em_iters": 609,
+ "stop_iter": 0,
+ "train_ll_em": -5.148593717439102,
+ "n_params": 4092,
+ "fit_ll": -5.583726195978411,
+ "train_ll": -5.583654251643366,
+ "val_ll": -5.566510430463396,
+ "test_ll": -5.577724374899635,
+ "part": "real",
+ "dataset": "eurndq-q",
+ "model": "hmm-S4",
+ "init": 1,
+ "stage": 1,
+ "wall_time": 1077.8134624958038,
+ "device": "cpu"
+}

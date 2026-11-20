@@ -1,0 +1,26 @@
+{
+ "oracle_kind": "mix2",
+ "train_ll": -3.5384709809889334,
+ "lbfgs_iters": 28,
+ "capped": false,
+ "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "n_params": 5,
+ "kl": 1.5242102208602612e-05,
+ "0.01": {
+  "ckl": 5.4779176929661215e-06,
+  "ratio": 0.9844066076559171,
+  "ratio_lower": 0.9878368688591631,
+  "mass": 0.014718807160320306
+ },
+ "0.001": {
+  "ckl": 2.081110516579025e-06,
+  "ratio": 1.0602902432453136,
+  "ratio_lower": 1.0768924848704335,
+  "mass": 0.0007044819361953615
+ },
+ "level": 1,
+ "dataset": "jump-g-n100000-s1",
+ "model": "oracle",
+ "init": 0,
+ "wall_time": 3.0027754306793213
+}

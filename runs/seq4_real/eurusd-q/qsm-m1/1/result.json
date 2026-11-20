@@ -1,0 +1,33 @@
+{
+ "dataset": "eurusd-q",
+ "model": "qsm-m1",
+ "init": 1,
+ "fit_ll": -3.414871718089975,
+ "train_ll": -3.4148533314575507,
+ "val_ll": -3.4937535944837226,
+ "test_ll": -3.5084842186695115,
+ "stop_iter": 50,
+ "lbfgs_iters": 152,
+ "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "fit_ll_last": -3.4103662386940594,
+ "val_ll_last": -3.512840910045794,
+ "adam_ll": -3.429247555967739,
+ "val_curve": [
+  [
+   50,
+   -3.493753594483724
+  ],
+  [
+   100,
+   -3.5115339874562816
+  ],
+  [
+   150,
+   -3.5128407951301064
+  ]
+ ],
+ "memory_dim": 2,
+ "n_params": 256,
+ "n_effective": 217,
+ "wall_time": 16.5364511013031
+}

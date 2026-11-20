@@ -1,0 +1,29 @@
+{
+ "dataset": "nasdaq-u",
+ "model": "qsm-m1",
+ "init": 0,
+ "fit_ll": -2.5555299778123137,
+ "train_ll": -2.55500024394254,
+ "val_ll": -2.5616613656412266,
+ "test_ll": -2.564920125241682,
+ "stop_iter": 129,
+ "lbfgs_iters": 129,
+ "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "fit_ll_last": -2.5555299778123137,
+ "val_ll_last": -2.561661365641227,
+ "adam_ll": -2.634128938778462,
+ "val_curve": [
+  [
+   50,
+   -2.5675158896562675
+  ],
+  [
+   100,
+   -2.561766262961366
+  ]
+ ],
+ "memory_dim": 2,
+ "n_params": 256,
+ "n_effective": 217,
+ "wall_time": 34.9155809879303
+}

@@ -1,0 +1,17 @@
+{
+ "init_ll": -5.923595422444373,
+ "adam_loss": 3.4924960530952447,
+ "lbfgs_iters": 1614,
+ "lbfgs_message": "wall-clock cap",
+ "capped": true,
+ "n_params": 440,
+ "fit_ll": -3.425712608696128,
+ "train_ll": -3.425712608696128,
+ "part": "synth",
+ "dataset": "msvarc",
+ "model": "k-qa",
+ "init": 1,
+ "stage": 1,
+ "wall_time": 1809.7311639785767,
+ "device": "cpu"
+}

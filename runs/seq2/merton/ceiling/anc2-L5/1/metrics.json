@@ -1,0 +1,30 @@
+{
+  "target": "merton",
+  "mode": "ceiling",
+  "circuit": "anc2-L5",
+  "id": 1,
+  "n_params": 355,
+  "n_layers": 5,
+  "n_qubits": 12,
+  "objective": 0.005366943904410171,
+  "adam_objective": 0.021166969366677613,
+  "steps": 22000,
+  "lbfgs_iters": 20000,
+  "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+  "wall_time": 618.4233438968658,
+  "fit": {
+    "adam_steps": 2000,
+    "lbfgs_iters": 20000
+  },
+  "metrics": {
+    "weighted_tv": 0.013659450208541441,
+    "stationary_tv": 0.01000476094278512,
+    "tail_tv": 0.16353756719599577,
+    "lag1_0": 0.8850560765423988,
+    "lag1_exact_0": 0.8996134733710737,
+    "acf_err_0": 0.039812864762494016,
+    "cond_mean_rmse_0": 0.026288096899827793,
+    "cond_sd_rel_0": 0.064669793951374
+  },
+  "tight_pass": true
+}

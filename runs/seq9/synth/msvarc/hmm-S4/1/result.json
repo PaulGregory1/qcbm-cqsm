@@ -1,0 +1,14 @@
+{
+ "em_iters": 1000,
+ "train_ll_em": -3.929263613736865,
+ "n_params": 4092,
+ "fit_ll": -3.9297116663796903,
+ "train_ll": -3.9297116663796903,
+ "part": "synth",
+ "dataset": "msvarc",
+ "model": "hmm-S4",
+ "init": 1,
+ "stage": 1,
+ "wall_time": 35.916203022003174,
+ "device": "cpu"
+}

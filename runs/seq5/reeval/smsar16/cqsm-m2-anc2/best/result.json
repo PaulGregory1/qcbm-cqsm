@@ -1,0 +1,22 @@
+{
+ "exp": "reeval",
+ "dataset": "smsar16",
+ "model": "cqsm-m2-anc2",
+ "init": "best",
+ "cap_seconds": 60,
+ "kind": "smsar",
+ "N": 16,
+ "seed": 730,
+ "seq4_init": "4",
+ "seq4_train_ll": -2.4101764745611893,
+ "seq4_heldout_kl_rate": 0.024952249549907345,
+ "n_params": 329,
+ "filter_dim": 16,
+ "capped": false,
+ "train_ll": -2.4101764745611893,
+ "truth_train_ll": -2.39142568978455,
+ "truth_test_ll": -2.36741854557496,
+ "heldout_kl_rate": 0.024952249549907345,
+ "heldout_se": 0.0004862784308533182,
+ "wall_time": 8.058140993118286
+}

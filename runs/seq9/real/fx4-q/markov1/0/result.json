@@ -1,0 +1,14 @@
+{
+ "n_params": 65280,
+ "fit_ll": -4.45791444871696,
+ "train_ll": -4.457679966529724,
+ "val_ll": -5.400544037344534,
+ "test_ll": -5.23026612024108,
+ "part": "real",
+ "dataset": "fx4-q",
+ "model": "markov1",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 2.6714727878570557,
+ "device": "cpu"
+}

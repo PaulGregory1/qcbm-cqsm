@@ -1,0 +1,36 @@
+{
+  "circuit": "B0",
+  "variant": "B0",
+  "n_layers": 3,
+  "n_params": 119,
+  "encoding": "gray",
+  "seed": 0,
+  "mode": "warm",
+  "steps": 1500,
+  "init_loss": 0.0046574453190165,
+  "final_loss": 0.0010050524334975774,
+  "wall_time": 133.55088114738464,
+  "settings": {
+    "steps": 1500,
+    "lr": 0.03,
+    "eps": 0.01,
+    "noise": 0.2,
+    "sinkhorn_iters": 100,
+    "stop_smooth": 25
+  },
+  "metrics": {
+    "weighted_tv": 0.07354232189259402,
+    "tail_tv": 0.24988269499415255,
+    "stationary_tv": 0.030600194061980973,
+    "lag1_acf": 0.8918488334622366,
+    "lag1_acf_exact": 0.9048120579807228,
+    "acf_err": 0.044475169457757036,
+    "slope": 0.8965148495032208,
+    "flux_ratio_depth5": 0.9256977616848173,
+    "flux_ratio_depth4": 0.7466042922413986,
+    "flux_ratio_depth3": 1.0233330778147414,
+    "flux_ratio_depth1-2": 1.053120464192432,
+    "bulk_row_tv_near_deep": 0.06591310500180743,
+    "bulk_row_tv_other": 0.07279911301292633
+  }
+}

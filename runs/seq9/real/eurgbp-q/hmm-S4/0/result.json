@@ -1,0 +1,17 @@
+{
+ "em_iters": 983,
+ "stop_iter": 10,
+ "train_ll_em": -4.924752665688242,
+ "n_params": 4092,
+ "fit_ll": -5.059019279634462,
+ "train_ll": -5.058975222309379,
+ "val_ll": -5.566015125956485,
+ "test_ll": -5.279820240110618,
+ "part": "real",
+ "dataset": "eurgbp-q",
+ "model": "hmm-S4",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 1520.539980173111,
+ "device": "cpu"
+}

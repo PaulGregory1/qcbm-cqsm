@@ -1,0 +1,16 @@
+{
+ "dataset": "smsar16",
+ "kind": "smsar",
+ "N": 16,
+ "seed": 730,
+ "model": "markov-3",
+ "init": 0,
+ "memory_dim": 1024,
+ "n_params": 1015808,
+ "heldout_kl_rate": 0.319383905230902,
+ "heldout_se": 0.0018487562558877387,
+ "train_ll": -2.3234464023940156,
+ "truth_train_ll": -2.39142568978455,
+ "truth_test_ll": -2.36741854557496,
+ "wall_time": 0.5218119621276855
+}

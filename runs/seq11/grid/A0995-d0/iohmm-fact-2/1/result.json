@@ -1,0 +1,21 @@
+{
+ "exp": "grid",
+ "dataset": "A0995-d0",
+ "kind": "msar",
+ "N": null,
+ "seed": 1160,
+ "model": "iohmm-fact-2",
+ "init": 1,
+ "cap_seconds": 1800,
+ "S": 2,
+ "filter_dim": 2,
+ "n_params": 2048,
+ "em_iters": 157,
+ "capped": false,
+ "train_ll": -2.2644110555151773,
+ "truth_train_ll": -2.265586427917524,
+ "truth_test_ll": -2.2615965456652996,
+ "heldout_kl_rate": 0.009525867913751058,
+ "heldout_se": 0.0003048747181904563,
+ "wall_time": 0.8435170650482178
+}

@@ -1,0 +1,43 @@
+{
+ "stop_iter": 0,
+ "lbfgs_iters": 227,
+ "lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "fit_ll_last": -2.764993559405685,
+ "val_ll_last": -2.8133034516963495,
+ "adam_ll": -2.7741067383248645,
+ "val_curve": [
+  [
+   50,
+   -2.8109566880842087
+  ],
+  [
+   100,
+   -2.812901243303778
+  ],
+  [
+   150,
+   -2.813779370037991
+  ],
+  [
+   200,
+   -2.814126480131317
+  ]
+ ],
+ "n_params": 492,
+ "stage1_init": "1",
+ "S": 2,
+ "kernel": "mix36",
+ "filter_dim": 2,
+ "n_kernel": 214,
+ "memory_dim": 2,
+ "fit_ll": -2.7741067383248645,
+ "train_ll": -2.7737007121350796,
+ "val_ll": -2.8093786200319344,
+ "test_ll": -2.820770025921874,
+ "part": "real",
+ "dataset": "nasdaq-v",
+ "model": "sw-mix36-S2",
+ "init": 4,
+ "stage": 2,
+ "wall_time": 7.224480867385864
+}

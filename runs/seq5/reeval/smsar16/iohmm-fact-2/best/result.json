@@ -1,0 +1,22 @@
+{
+ "exp": "reeval",
+ "dataset": "smsar16",
+ "model": "iohmm-fact-2",
+ "init": "best",
+ "cap_seconds": 60,
+ "kind": "smsar",
+ "N": 16,
+ "seed": 730,
+ "seq4_init": "2",
+ "seq4_train_ll": -2.3987381858507213,
+ "seq4_heldout_kl_rate": 0.020986980622385243,
+ "n_params": 2048,
+ "filter_dim": 2,
+ "capped": false,
+ "train_ll": -2.3987381858507213,
+ "truth_train_ll": -2.39142568978455,
+ "truth_test_ll": -2.36741854557496,
+ "heldout_kl_rate": 0.020986980622385243,
+ "heldout_se": 0.0003921062461244145,
+ "wall_time": 1.3655681610107422
+}

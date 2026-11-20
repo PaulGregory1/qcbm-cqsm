@@ -1,0 +1,25 @@
+{
+ "train_ll": -2.5588321426327933,
+ "lbfgs_iters": 2000,
+ "capped": false,
+ "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+ "n_params": 54,
+ "kl": 0.00849695206450219,
+ "0.01": {
+  "ckl": 0.0008349833057344432,
+  "ratio": 0.977991154879301,
+  "stat_ckl": 0.0002544239783914696,
+  "stat_ratio": 0.9801705417007179
+ },
+ "0.001": {
+  "ckl": 0.0005178747724058353,
+  "ratio": 1.2945964098055542,
+  "stat_ckl": 0.00019102410115477616,
+  "stat_ratio": 1.1314351895588934
+ },
+ "level": 2,
+ "dataset": "arch-u-n100-s1",
+ "model": "mixt8",
+ "init": 0,
+ "wall_time": 91.63503885269165
+}

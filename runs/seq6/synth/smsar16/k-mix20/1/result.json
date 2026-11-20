@@ -1,0 +1,23 @@
+{
+ "S": 1,
+ "kernel": "mix20",
+ "filter_dim": 1,
+ "n_params": 118,
+ "n_kernel": 118,
+ "init_ll": -3.1737642859834576,
+ "adam_ll": -2.4481698402743852,
+ "lbfgs_iters": 2000,
+ "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+ "capped": false,
+ "train_ll": -2.4474617740786204,
+ "truth_train_ll": -2.39142568978455,
+ "truth_test_ll": -2.36741854557496,
+ "heldout_kl_rate": 0.06394519299741738,
+ "heldout_se": 0.000817475437375517,
+ "part": "synth",
+ "dataset": "smsar16",
+ "model": "k-mix20",
+ "init": 1,
+ "stage": 1,
+ "wall_time": 12.520609855651855
+}

@@ -1,0 +1,14 @@
+{
+ "n_params": 255,
+ "fit_ll": -4.179061652088361,
+ "train_ll": -4.178879297510934,
+ "val_ll": -4.2186270344945775,
+ "test_ll": -4.140347519375079,
+ "part": "real",
+ "dataset": "eurjpy-v",
+ "model": "iid",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 2.010493516921997,
+ "device": "cpu"
+}

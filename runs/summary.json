@@ -1,0 +1,3109 @@
+{
+  "settings": {
+    "base": {
+      "lr": 0.03,
+      "eps": 0.01,
+      "noise": 0.2,
+      "sinkhorn_iters": 25,
+      "n_layers": 3
+    },
+    "steps_max": 800,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "configs": {
+      "primary": {},
+      "converged-solver": {
+        "sinkhorn_iters": 100
+      }
+    },
+    "diagnostic_variants": {
+      "eps0.005": {
+        "eps": 0.005
+      },
+      "noise0.1": {
+        "noise": 0.1
+      },
+      "layers4": {
+        "n_layers": 4
+      }
+    },
+    "single_register": {
+      "model": "single"
+    },
+    "thresholds_spec": {
+      "stationary_tv_max": 0.05,
+      "lag1_tol": 0.02,
+      "slope_tol": 0.03,
+      "weighted_tv_max": 0.26162442938821623,
+      "seed_spread_max": 0.2
+    },
+    "thresholds_tight": {
+      "weighted_tv": 0.05,
+      "stationary_tv": 0.02
+    }
+  },
+  "references": {
+    "exact": {
+      "weighted_tv": 0.0,
+      "tail_tv": 0.0,
+      "stationary_tv": 0.0,
+      "lag1_acf": 0.9048120579807226,
+      "lag1_acf_exact": 0.9048120579807226,
+      "acf_err": 0.0,
+      "slope": 0.9048120579807226,
+      "flux_ratio_depth5": 1.0,
+      "flux_ratio_depth4": 1.0,
+      "flux_ratio_depth3": 1.0,
+      "flux_ratio_depth1-2": 1.0,
+      "bulk_row_tv_near_deep": 0.0,
+      "bulk_row_tv_other": 0.0
+    },
+    "ar1": {
+      "weighted_tv": 0.0145004795932639,
+      "tail_tv": 0.02016549039900621,
+      "stationary_tv": 0.0008903365866592195,
+      "lag1_acf": 0.8989725820453822,
+      "lag1_acf_exact": 0.9048120579807226,
+      "acf_err": 0.023058042456525207,
+      "slope": 0.8989725618516872,
+      "flux_ratio_depth5": 1.032275843790682,
+      "flux_ratio_depth4": 1.0298234443814978,
+      "flux_ratio_depth3": 1.0315953226787378,
+      "flux_ratio_depth1-2": 1.0317189388775483,
+      "bulk_row_tv_near_deep": 0.014369608805754974,
+      "bulk_row_tv_other": 0.014387566014463294
+    },
+    "tabular": {
+      "weighted_tv": 0.016744235862430915,
+      "tail_tv": 0.2180617194830789,
+      "stationary_tv": 0.008284143582139327,
+      "lag1_acf": 0.8934315126694468,
+      "lag1_acf_exact": 0.9048120579807226,
+      "acf_err": 0.03851448679481695,
+      "slope": 0.8939030960603749,
+      "flux_ratio_depth5": 1.0225448148112892,
+      "flux_ratio_depth4": 1.016407663047495,
+      "flux_ratio_depth3": 1.0330191576072691,
+      "flux_ratio_depth1-2": 1.0224966364976917,
+      "bulk_row_tv_near_deep": 0.01486470252592381,
+      "bulk_row_tv_other": 0.015766297008301136
+    },
+    "iid": {
+      "weighted_tv": 0.5232488587764325,
+      "tail_tv": 0.9450416870453391,
+      "stationary_tv": 0.008823769494010699,
+      "lag1_acf": -6.229258927073855e-19,
+      "lag1_acf_exact": 0.9048120579807226,
+      "acf_err": 0.9048120579807226,
+      "slope": 1.4579765526352845e-35,
+      "flux_ratio_depth5": 3.6745553516077245,
+      "flux_ratio_depth4": 2.322778706390807,
+      "flux_ratio_depth3": 3.1815367437974755,
+      "flux_ratio_depth1-2": 3.306704094612475,
+      "bulk_row_tv_near_deep": 0.508847969641945,
+      "bulk_row_tv_other": 0.5099937417167064
+    }
+  },
+  "loss_floor_exact": {
+    "eps0.01": 0.00011346950260256519,
+    "eps0.005": 0.0004199277207700483
+  },
+  "runs": {
+    "primary": {
+      "binary": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.2731284345479522,
+            "tail_tv": 0.40388696062803586,
+            "stationary_tv": 0.19281313175014714,
+            "lag1_acf": 0.933858345943776,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.6118742624037348,
+            "slope": 0.9230711799505924,
+            "flux_ratio_depth5": 0.002316359148078281,
+            "flux_ratio_depth4": 0.06833195579051946,
+            "flux_ratio_depth3": 0.7359726414318111,
+            "flux_ratio_depth1-2": 0.9955247368569948,
+            "bulk_row_tv_near_deep": 0.29336126579096256,
+            "bulk_row_tv_other": 0.23388417843792128
+          },
+          "steps": 269,
+          "stopped_early": true,
+          "final_loss": 0.010900527520393138,
+          "init_loss": 0.7578246731697446,
+          "wall_time": 6.47958779335022,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.2460493712142661,
+            "tail_tv": 0.37894636222188877,
+            "stationary_tv": 0.1752726331908932,
+            "lag1_acf": 0.9572971924979325,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.6813346371901992,
+            "slope": 0.9244349312391644,
+            "flux_ratio_depth5": 0.002795938701850175,
+            "flux_ratio_depth4": 0.06611746950446,
+            "flux_ratio_depth3": 0.8168655851898844,
+            "flux_ratio_depth1-2": 0.9990747267325023,
+            "bulk_row_tv_near_deep": 0.26217675221666426,
+            "bulk_row_tv_other": 0.21044719370453874
+          },
+          "steps": 324,
+          "stopped_early": true,
+          "final_loss": 0.00830827780863112,
+          "init_loss": 0.48212537225529867,
+          "wall_time": 6.24839186668396,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.23219696022638317,
+            "tail_tv": 0.3040228809283212,
+            "stationary_tv": 0.21368474750322985,
+            "lag1_acf": 0.9636222255456135,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.6843212326233354,
+            "slope": 0.9298818785562697,
+            "flux_ratio_depth5": 0.0053236459898220135,
+            "flux_ratio_depth4": 0.10013020507600127,
+            "flux_ratio_depth3": 0.9561925019180335,
+            "flux_ratio_depth1-2": 0.9824958898069518,
+            "bulk_row_tv_near_deep": 0.2697951811041774,
+            "bulk_row_tv_other": 0.1790524878987599
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.007642564022246275,
+          "init_loss": 0.24647113550024685,
+          "wall_time": 9.563673257827759,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        }
+      },
+      "gray": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.1788193399517623,
+            "tail_tv": 0.45319053060919634,
+            "stationary_tv": 0.04719369713159427,
+            "lag1_acf": 0.8916216301215052,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.08291089629985415,
+            "slope": 0.9075353643729372,
+            "flux_ratio_depth5": 0.24643009016970358,
+            "flux_ratio_depth4": 0.37939859824240985,
+            "flux_ratio_depth3": 0.9464766015577076,
+            "flux_ratio_depth1-2": 1.0137542314168668,
+            "bulk_row_tv_near_deep": 0.19977631474099716,
+            "bulk_row_tv_other": 0.14367985917035964
+          },
+          "steps": 466,
+          "stopped_early": true,
+          "final_loss": 0.0052647282004848125,
+          "init_loss": 0.2120263003352909,
+          "wall_time": 6.92179799079895,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.1705616434443109,
+            "tail_tv": 0.41270875967144843,
+            "stationary_tv": 0.03800184661577792,
+            "lag1_acf": 0.8922714203902622,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.08403454352208606,
+            "slope": 0.9063278241168627,
+            "flux_ratio_depth5": 0.24861049471894986,
+            "flux_ratio_depth4": 0.35046864284086254,
+            "flux_ratio_depth3": 0.9412888588017263,
+            "flux_ratio_depth1-2": 1.039229377776707,
+            "bulk_row_tv_near_deep": 0.1913834054296115,
+            "bulk_row_tv_other": 0.13731386202766707
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.004965234810629184,
+          "init_loss": 0.47301071286668994,
+          "wall_time": 9.613556861877441,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.18595618966142202,
+            "tail_tv": 0.478564458210408,
+            "stationary_tv": 0.05464618064945512,
+            "lag1_acf": 0.9040637845670821,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.1378056125706461,
+            "slope": 0.9141834584634809,
+            "flux_ratio_depth5": 0.20884088575931853,
+            "flux_ratio_depth4": 0.2523592009783044,
+            "flux_ratio_depth3": 0.949017515741108,
+            "flux_ratio_depth1-2": 1.0553937124298922,
+            "bulk_row_tv_near_deep": 0.2022448836667473,
+            "bulk_row_tv_other": 0.15199183015206263
+          },
+          "steps": 395,
+          "stopped_early": true,
+          "final_loss": 0.005476663118672669,
+          "init_loss": 0.26017706791845807,
+          "wall_time": 6.908296346664429,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        }
+      }
+    },
+    "converged-solver": {
+      "binary": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.20374100976853654,
+            "tail_tv": 0.2752556038914992,
+            "stationary_tv": 0.12308788388617356,
+            "lag1_acf": 0.9477604725028558,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.6361910163846276,
+            "slope": 0.932980240066001,
+            "flux_ratio_depth5": 0.005005436818314333,
+            "flux_ratio_depth4": 0.056536916480937185,
+            "flux_ratio_depth3": 0.991575196843536,
+            "flux_ratio_depth1-2": 1.0012545503520696,
+            "bulk_row_tv_near_deep": 0.2209854444648679,
+            "bulk_row_tv_other": 0.16913145364921173
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.00763152019975329,
+          "init_loss": 0.7578246731697446,
+          "wall_time": 25.520035982131958,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 100,
+            "n_layers": 3
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.24170643757766677,
+            "tail_tv": 0.34171280575108975,
+            "stationary_tv": 0.2371138127223522,
+            "lag1_acf": 0.9676912177997784,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.7182181943464301,
+            "slope": 0.9269471827840655,
+            "flux_ratio_depth5": 0.0047866367528503345,
+            "flux_ratio_depth4": 0.07693363687642947,
+            "flux_ratio_depth3": 0.8907173862102503,
+            "flux_ratio_depth1-2": 1.034926059743816,
+            "bulk_row_tv_near_deep": 0.2572402840792596,
+            "bulk_row_tv_other": 0.2087670573474456
+          },
+          "steps": 678,
+          "stopped_early": true,
+          "final_loss": 0.007853688918928663,
+          "init_loss": 0.48212537225529867,
+          "wall_time": 22.11789631843567,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 100,
+            "n_layers": 3
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.23089884039524483,
+            "tail_tv": 0.33378152985596654,
+            "stationary_tv": 0.272916155452393,
+            "lag1_acf": 0.9728117361264108,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.742528061527705,
+            "slope": 0.9247852916485403,
+            "flux_ratio_depth5": 0.006726922974124759,
+            "flux_ratio_depth4": 0.053045342145327114,
+            "flux_ratio_depth3": 0.9607052033477564,
+            "flux_ratio_depth1-2": 1.0020288739673606,
+            "bulk_row_tv_near_deep": 0.25105959563804126,
+            "bulk_row_tv_other": 0.19329367849297874
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.007640221368079271,
+          "init_loss": 0.24647113550024685,
+          "wall_time": 25.283377170562744,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 100,
+            "n_layers": 3
+          }
+        }
+      },
+      "gray": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.16222160600392882,
+            "tail_tv": 0.447160552751217,
+            "stationary_tv": 0.037094539570633904,
+            "lag1_acf": 0.8915650602774499,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.08436244076078422,
+            "slope": 0.9049210059330236,
+            "flux_ratio_depth5": 0.2473768813347169,
+            "flux_ratio_depth4": 0.4640778700742297,
+            "flux_ratio_depth3": 0.9750374660378559,
+            "flux_ratio_depth1-2": 1.0395136231270836,
+            "bulk_row_tv_near_deep": 0.18958322419832654,
+            "bulk_row_tv_other": 0.12214769461105332
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.004842170685738285,
+          "init_loss": 0.2120263003352909,
+          "wall_time": 25.0853009223938,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 100,
+            "n_layers": 3
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.16914083364700724,
+            "tail_tv": 0.4118778877311111,
+            "stationary_tv": 0.038257125267971634,
+            "lag1_acf": 0.8921309391665931,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.08327940481462429,
+            "slope": 0.9059247665053934,
+            "flux_ratio_depth5": 0.24846591807251348,
+            "flux_ratio_depth4": 0.3741130970420555,
+            "flux_ratio_depth3": 0.9402097401984557,
+            "flux_ratio_depth1-2": 1.0405820700628552,
+            "bulk_row_tv_near_deep": 0.1887515691612474,
+            "bulk_row_tv_other": 0.1371251951300914
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.004949021670555703,
+          "init_loss": 0.47301071286668994,
+          "wall_time": 25.356511116027832,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 100,
+            "n_layers": 3
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.16151540177439844,
+            "tail_tv": 0.4526696167791295,
+            "stationary_tv": 0.03131865532654844,
+            "lag1_acf": 0.8966189322546763,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.11295714322385478,
+            "slope": 0.9080403483804308,
+            "flux_ratio_depth5": 0.22322136424377628,
+            "flux_ratio_depth4": 0.39938055814371004,
+            "flux_ratio_depth3": 0.9910334488511028,
+            "flux_ratio_depth1-2": 1.0330736232155133,
+            "bulk_row_tv_near_deep": 0.19238181683576325,
+            "bulk_row_tv_other": 0.11521540469495183
+          },
+          "steps": 700,
+          "stopped_early": true,
+          "final_loss": 0.0047452256088838345,
+          "init_loss": 0.26017706791845807,
+          "wall_time": 23.06710720062256,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 100,
+            "n_layers": 3
+          }
+        }
+      }
+    },
+    "diagnostic/eps0.005": {
+      "binary": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.3099577279824141,
+            "tail_tv": 0.36583298797925495,
+            "stationary_tv": 0.2272962786045394,
+            "lag1_acf": 0.9594751948273902,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.6825990476407393,
+            "slope": 0.9445801743202262,
+            "flux_ratio_depth5": 0.004107474856757479,
+            "flux_ratio_depth4": 0.10722345041631456,
+            "flux_ratio_depth3": 0.6418368420202908,
+            "flux_ratio_depth1-2": 1.1872440595318055,
+            "bulk_row_tv_near_deep": 0.3686527299878596,
+            "bulk_row_tv_other": 0.24163379433133692
+          },
+          "steps": 270,
+          "stopped_early": true,
+          "final_loss": 0.020800580636726247,
+          "init_loss": 0.7621118065210061,
+          "wall_time": 9.093750953674316,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.005,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.33013693150121004,
+            "tail_tv": 0.45315339863603865,
+            "stationary_tv": 0.18408290845467318,
+            "lag1_acf": 0.9318910818981643,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.5794483792632432,
+            "slope": 0.9385541153758747,
+            "flux_ratio_depth5": 0.00335325701174772,
+            "flux_ratio_depth4": 0.035041612964485665,
+            "flux_ratio_depth3": 0.3646718449431533,
+            "flux_ratio_depth1-2": 1.0154710374488154,
+            "bulk_row_tv_near_deep": 0.3774424001174206,
+            "bulk_row_tv_other": 0.27066365212823973
+          },
+          "steps": 203,
+          "stopped_early": true,
+          "final_loss": 0.014889354206867758,
+          "init_loss": 0.48625136342253833,
+          "wall_time": 9.059183120727539,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.005,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.364750315979011,
+            "tail_tv": 0.6048530266095071,
+            "stationary_tv": 0.365229659098818,
+            "lag1_acf": 0.9492720167227385,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.6792058101632734,
+            "slope": 0.9461161177513134,
+            "flux_ratio_depth5": 0.004200503347270055,
+            "flux_ratio_depth4": 0.030704743711040434,
+            "flux_ratio_depth3": 0.8671525525686811,
+            "flux_ratio_depth1-2": 0.9149471101768492,
+            "bulk_row_tv_near_deep": 0.3654713781932503,
+            "bulk_row_tv_other": 0.34107254893515765
+          },
+          "steps": 232,
+          "stopped_early": true,
+          "final_loss": 0.020738908689526526,
+          "init_loss": 0.2506792460216492,
+          "wall_time": 7.243351936340332,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.005,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        }
+      },
+      "gray": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.25748323406358936,
+            "tail_tv": 0.4007609733675103,
+            "stationary_tv": 0.07624662349933722,
+            "lag1_acf": 0.8580288329053654,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.06533549913350911,
+            "slope": 0.883360635658614,
+            "flux_ratio_depth5": 0.30203051746077947,
+            "flux_ratio_depth4": 0.328858335399938,
+            "flux_ratio_depth3": 1.0144710534573036,
+            "flux_ratio_depth1-2": 1.2700535882315946,
+            "bulk_row_tv_near_deep": 0.2515918035234585,
+            "bulk_row_tv_other": 0.2574069927790831
+          },
+          "steps": 367,
+          "stopped_early": true,
+          "final_loss": 0.011646813532450574,
+          "init_loss": 0.21628316542373005,
+          "wall_time": 7.900784730911255,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.005,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.22367950092617628,
+            "tail_tv": 0.42448722874370154,
+            "stationary_tv": 0.07540168781238843,
+            "lag1_acf": 0.9158820523145152,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.16263128991448517,
+            "slope": 0.9261808149656645,
+            "flux_ratio_depth5": 0.2264830590955884,
+            "flux_ratio_depth4": 0.15698848289600847,
+            "flux_ratio_depth3": 1.0989202146328378,
+            "flux_ratio_depth1-2": 1.0374741285433204,
+            "bulk_row_tv_near_deep": 0.2356119601978533,
+            "bulk_row_tv_other": 0.19470074814198887
+          },
+          "steps": 292,
+          "stopped_early": true,
+          "final_loss": 0.00930646384359952,
+          "init_loss": 0.477585174386017,
+          "wall_time": 8.63981318473816,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.005,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.2629820600535851,
+            "tail_tv": 0.49017479335671543,
+            "stationary_tv": 0.0632498868616134,
+            "lag1_acf": 0.8910543606852585,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.09830877032170715,
+            "slope": 0.9103446907424839,
+            "flux_ratio_depth5": 0.25441836621755337,
+            "flux_ratio_depth4": 0.14789613021012568,
+            "flux_ratio_depth3": 1.3401258392528776,
+            "flux_ratio_depth1-2": 0.9942608201690211,
+            "bulk_row_tv_near_deep": 0.25911861511065915,
+            "bulk_row_tv_other": 0.25177035710962276
+          },
+          "steps": 343,
+          "stopped_early": true,
+          "final_loss": 0.013175815852416136,
+          "init_loss": 0.26433639518248386,
+          "wall_time": 8.472952842712402,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.005,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        }
+      }
+    },
+    "diagnostic/noise0.1": {
+      "binary": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.23171992092699212,
+            "tail_tv": 0.3047725238481639,
+            "stationary_tv": 0.09811338836923124,
+            "lag1_acf": 0.933160506070891,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.5950491995539109,
+            "slope": 0.9342431388372597,
+            "flux_ratio_depth5": 0.003958728067778352,
+            "flux_ratio_depth4": 0.024220714450078718,
+            "flux_ratio_depth3": 0.8941181742294435,
+            "flux_ratio_depth1-2": 1.0198619440563177,
+            "bulk_row_tv_near_deep": 0.26367995315335546,
+            "bulk_row_tv_other": 0.18343094770509974
+          },
+          "steps": 358,
+          "stopped_early": true,
+          "final_loss": 0.009314251592223141,
+          "init_loss": 0.21443212990706245,
+          "wall_time": 6.681516647338867,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.1,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.23912615914878455,
+            "tail_tv": 0.29806225131762176,
+            "stationary_tv": 0.08416909503509312,
+            "lag1_acf": 0.9335167528408886,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.593807413255427,
+            "slope": 0.9365267577820839,
+            "flux_ratio_depth5": 0.0010282985646932663,
+            "flux_ratio_depth4": 0.03227047381400756,
+            "flux_ratio_depth3": 0.8591984617048849,
+            "flux_ratio_depth1-2": 0.9750248053575465,
+            "bulk_row_tv_near_deep": 0.2754690448117472,
+            "bulk_row_tv_other": 0.18848521866755624
+          },
+          "steps": 447,
+          "stopped_early": true,
+          "final_loss": 0.008409080576550931,
+          "init_loss": 0.1356395767295112,
+          "wall_time": 7.244376182556152,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.1,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.2515916883651058,
+            "tail_tv": 0.28401094799380433,
+            "stationary_tv": 0.12747964871986706,
+            "lag1_acf": 0.933804387572693,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.5952086297643706,
+            "slope": 0.9387794018306123,
+            "flux_ratio_depth5": 0.0019016214899979654,
+            "flux_ratio_depth4": 0.023220215202348175,
+            "flux_ratio_depth3": 0.8607836855158588,
+            "flux_ratio_depth1-2": 0.9699014398832437,
+            "bulk_row_tv_near_deep": 0.2880276066773367,
+            "bulk_row_tv_other": 0.20168521349177732
+          },
+          "steps": 267,
+          "stopped_early": true,
+          "final_loss": 0.008730896361876468,
+          "init_loss": 0.07885920734153021,
+          "wall_time": 6.212605953216553,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.1,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        }
+      },
+      "gray": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.1792852335552285,
+            "tail_tv": 0.43394530603114434,
+            "stationary_tv": 0.048889651005397376,
+            "lag1_acf": 0.8904732187111031,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.08398442921474722,
+            "slope": 0.9063862324139161,
+            "flux_ratio_depth5": 0.2440883310146439,
+            "flux_ratio_depth4": 0.3740055990403209,
+            "flux_ratio_depth3": 0.9055169455256751,
+            "flux_ratio_depth1-2": 1.0173451405089726,
+            "bulk_row_tv_near_deep": 0.2070273110822098,
+            "bulk_row_tv_other": 0.1403689305682891
+          },
+          "steps": 437,
+          "stopped_early": true,
+          "final_loss": 0.005271967658568685,
+          "init_loss": 0.06295428467060049,
+          "wall_time": 6.9722678661346436,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.1,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.19022414231684415,
+            "tail_tv": 0.47996020873283507,
+            "stationary_tv": 0.05175520329436056,
+            "lag1_acf": 0.9006482052536522,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.11898929519741586,
+            "slope": 0.914458770548924,
+            "flux_ratio_depth5": 0.2157465722195904,
+            "flux_ratio_depth4": 0.328784689934415,
+            "flux_ratio_depth3": 0.9532355000059267,
+            "flux_ratio_depth1-2": 0.9856799819596114,
+            "bulk_row_tv_near_deep": 0.21071595653825534,
+            "bulk_row_tv_other": 0.15329636020492765
+          },
+          "steps": 428,
+          "stopped_early": true,
+          "final_loss": 0.005612534747923548,
+          "init_loss": 0.12754224748426013,
+          "wall_time": 6.895328044891357,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.1,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.1857551160601197,
+            "tail_tv": 0.4334783515494581,
+            "stationary_tv": 0.05512369468756957,
+            "lag1_acf": 0.895115489549746,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.12581741531614302,
+            "slope": 0.9082111265760144,
+            "flux_ratio_depth5": 0.19576132267230142,
+            "flux_ratio_depth4": 0.5172352760839223,
+            "flux_ratio_depth3": 0.9681186892315309,
+            "flux_ratio_depth1-2": 1.0551892582939832,
+            "bulk_row_tv_near_deep": 0.20251596054325835,
+            "bulk_row_tv_other": 0.16169520924341815
+          },
+          "steps": 571,
+          "stopped_early": true,
+          "final_loss": 0.00541421989493544,
+          "init_loss": 0.07973432458792531,
+          "wall_time": 8.046431064605713,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.1,
+            "sinkhorn_iters": 25,
+            "n_layers": 3
+          }
+        }
+      }
+    },
+    "diagnostic/layers4": {
+      "binary": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.24680887422526837,
+            "tail_tv": 0.297587151625784,
+            "stationary_tv": 0.16724240656308598,
+            "lag1_acf": 0.9322210936763089,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.5488599308504545,
+            "slope": 0.9339251593178516,
+            "flux_ratio_depth5": 0.004525502549437644,
+            "flux_ratio_depth4": 0.037466788858996014,
+            "flux_ratio_depth3": 0.9098931253144599,
+            "flux_ratio_depth1-2": 1.0229897630970617,
+            "bulk_row_tv_near_deep": 0.285171515128597,
+            "bulk_row_tv_other": 0.19483955786464488
+          },
+          "steps": 460,
+          "stopped_early": true,
+          "final_loss": 0.009856219607309556,
+          "init_loss": 0.3828851140039111,
+          "wall_time": 8.277034044265747,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 4
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.25316116678560263,
+            "tail_tv": 0.33418879317677586,
+            "stationary_tv": 0.11328210584338597,
+            "lag1_acf": 0.9403005311260381,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.6050570339524539,
+            "slope": 0.9396558540177568,
+            "flux_ratio_depth5": 0.0040100826325476435,
+            "flux_ratio_depth4": 0.04006867877114233,
+            "flux_ratio_depth3": 0.89342783022315,
+            "flux_ratio_depth1-2": 0.9907052683502996,
+            "bulk_row_tv_near_deep": 0.2882763748770254,
+            "bulk_row_tv_other": 0.20357609961315318
+          },
+          "steps": 536,
+          "stopped_early": true,
+          "final_loss": 0.009088389121766467,
+          "init_loss": 0.7399424982938524,
+          "wall_time": 8.169853210449219,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 4
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.23992634572552307,
+            "tail_tv": 0.2873942072076219,
+            "stationary_tv": 0.39424527249290164,
+            "lag1_acf": 0.9790631134091632,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.7826347084955287,
+            "slope": 0.92471995867079,
+            "flux_ratio_depth5": 0.004908597564344878,
+            "flux_ratio_depth4": 0.041704503485114466,
+            "flux_ratio_depth3": 0.8339701457463051,
+            "flux_ratio_depth1-2": 1.0094918503333121,
+            "bulk_row_tv_near_deep": 0.26921743478078203,
+            "bulk_row_tv_other": 0.19385388933171557
+          },
+          "steps": 682,
+          "stopped_early": true,
+          "final_loss": 0.007969578262746309,
+          "init_loss": 0.1369093140753499,
+          "wall_time": 9.153739929199219,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 4
+          }
+        }
+      },
+      "gray": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.17590871282577947,
+            "tail_tv": 0.44553846114484263,
+            "stationary_tv": 0.042042482706975075,
+            "lag1_acf": 0.891257787451135,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.08280502119860617,
+            "slope": 0.9065531159156184,
+            "flux_ratio_depth5": 0.24812814693349233,
+            "flux_ratio_depth4": 0.3663879474168886,
+            "flux_ratio_depth3": 0.9353259788035055,
+            "flux_ratio_depth1-2": 1.0216188502164154,
+            "bulk_row_tv_near_deep": 0.20173575812757155,
+            "bulk_row_tv_other": 0.13765874383700788
+          },
+          "steps": 282,
+          "stopped_early": true,
+          "final_loss": 0.005191893809275282,
+          "init_loss": 0.16376503547794868,
+          "wall_time": 6.278207778930664,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 4
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.1845244407284763,
+            "tail_tv": 0.4356676659009435,
+            "stationary_tv": 0.045232070642763966,
+            "lag1_acf": 0.8886937762999028,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.07736211894506154,
+            "slope": 0.9050815806450285,
+            "flux_ratio_depth5": 0.2536396569225004,
+            "flux_ratio_depth4": 0.39123105710384765,
+            "flux_ratio_depth3": 0.8992270051529316,
+            "flux_ratio_depth1-2": 1.0519207755544497,
+            "bulk_row_tv_near_deep": 0.21055521614942385,
+            "bulk_row_tv_other": 0.14511028735994147
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.0053735317454772676,
+          "init_loss": 1.1117058902325816,
+          "wall_time": 10.247761011123657,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 4
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.17135498391366788,
+            "tail_tv": 0.4433799635203065,
+            "stationary_tv": 0.04848041090554716,
+            "lag1_acf": 0.897490582375327,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.08533044184485383,
+            "slope": 0.9085543018676911,
+            "flux_ratio_depth5": 0.254735686877841,
+            "flux_ratio_depth4": 0.506121190206178,
+            "flux_ratio_depth3": 0.9340103865242838,
+            "flux_ratio_depth1-2": 1.0415046716907181,
+            "bulk_row_tv_near_deep": 0.1964174778004821,
+            "bulk_row_tv_other": 0.135901899896975
+          },
+          "steps": 529,
+          "stopped_early": true,
+          "final_loss": 0.004942567644332107,
+          "init_loss": 0.139436465923635,
+          "wall_time": 8.098930835723877,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 4
+          }
+        }
+      }
+    },
+    "single_register": {
+      "binary": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.2938968435441235,
+            "tail_tv": 0.39776337892981695,
+            "stationary_tv": 0.5086781363639485,
+            "lag1_acf": 0.9887604205826902,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.7953231374479761,
+            "slope": 0.9931952113017386,
+            "flux_ratio_depth5": 0.0005336327959687249,
+            "flux_ratio_depth4": 0.046580330646102126,
+            "flux_ratio_depth3": 0.7242953981262419,
+            "flux_ratio_depth1-2": 0.9182911537686721,
+            "bulk_row_tv_near_deep": 0.30777857215366494,
+            "bulk_row_tv_other": 0.2648935145846115
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.012036655120471279,
+          "init_loss": 1.283139358590637,
+          "wall_time": 9.822203874588013,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3,
+            "model": "single"
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.2957816798162589,
+            "tail_tv": 0.39872130163810293,
+            "stationary_tv": 0.5086781363641375,
+            "lag1_acf": 0.9887201829436131,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.7937451447084327,
+            "slope": 0.9933905665941487,
+            "flux_ratio_depth5": 0.00014166218088550357,
+            "flux_ratio_depth4": 0.05343756143431947,
+            "flux_ratio_depth3": 0.7269355333259361,
+            "flux_ratio_depth1-2": 0.9177332538757627,
+            "bulk_row_tv_near_deep": 0.31017369347284907,
+            "bulk_row_tv_other": 0.2664369516158524
+          },
+          "steps": 582,
+          "stopped_early": true,
+          "final_loss": 0.012035454697845269,
+          "init_loss": 0.5208986380338217,
+          "wall_time": 7.7228991985321045,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3,
+            "model": "single"
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.29440227967087673,
+            "tail_tv": 0.39792988422890185,
+            "stationary_tv": 0.5086781363640227,
+            "lag1_acf": 0.9885443867890399,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.7890358151281047,
+            "slope": 0.9914159742517985,
+            "flux_ratio_depth5": 0.009712845396861007,
+            "flux_ratio_depth4": 0.05224969308514693,
+            "flux_ratio_depth3": 0.7277296980867433,
+            "flux_ratio_depth1-2": 0.9212341583399165,
+            "bulk_row_tv_near_deep": 0.3084504088400219,
+            "bulk_row_tv_other": 0.26528126724723017
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.011970418091926338,
+          "init_loss": 0.16788801551608612,
+          "wall_time": 9.291913270950317,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3,
+            "model": "single"
+          }
+        }
+      },
+      "gray": {
+        "seed0": {
+          "metrics": {
+            "weighted_tv": 0.2651093239058019,
+            "tail_tv": 0.3988256205875852,
+            "stationary_tv": 0.5086781363639686,
+            "lag1_acf": 0.9883671322639841,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.7915354993181871,
+            "slope": 0.990801504546219,
+            "flux_ratio_depth5": 0.015886439823522374,
+            "flux_ratio_depth4": 0.03027614941992801,
+            "flux_ratio_depth3": 0.7595980823127203,
+            "flux_ratio_depth1-2": 0.9506721625783655,
+            "bulk_row_tv_near_deep": 0.2768692067662248,
+            "bulk_row_tv_other": 0.23496580973490477
+          },
+          "steps": 476,
+          "stopped_early": true,
+          "final_loss": 0.011800727547090002,
+          "init_loss": 0.5541244670098658,
+          "wall_time": 7.0332701206207275,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3,
+            "model": "single"
+          }
+        },
+        "seed1": {
+          "metrics": {
+            "weighted_tv": 0.24529101696363143,
+            "tail_tv": 0.3625198998868308,
+            "stationary_tv": 0.5086781363639696,
+            "lag1_acf": 0.9887927150753957,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.7894266481802723,
+            "slope": 0.9913093131451853,
+            "flux_ratio_depth5": 0.017127285651681295,
+            "flux_ratio_depth4": 0.029043272676737862,
+            "flux_ratio_depth3": 0.7534958410594729,
+            "flux_ratio_depth1-2": 0.9588809341522505,
+            "bulk_row_tv_near_deep": 0.2761415591512718,
+            "bulk_row_tv_other": 0.19867999556605953
+          },
+          "steps": 800,
+          "stopped_early": false,
+          "final_loss": 0.011167982133439676,
+          "init_loss": 0.22658905920906552,
+          "wall_time": 9.241111755371094,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3,
+            "model": "single"
+          }
+        },
+        "seed2": {
+          "metrics": {
+            "weighted_tv": 0.25085463162338173,
+            "tail_tv": 0.36424380509650656,
+            "stationary_tv": 0.5086781363640922,
+            "lag1_acf": 0.9889519277672333,
+            "lag1_acf_exact": 0.9048120579807226,
+            "acf_err": 0.7911720239294675,
+            "slope": 0.9937795013126481,
+            "flux_ratio_depth5": 0.005155598559808205,
+            "flux_ratio_depth4": 0.026066898197159558,
+            "flux_ratio_depth3": 0.7104835324344708,
+            "flux_ratio_depth1-2": 0.9513529473939584,
+            "bulk_row_tv_near_deep": 0.28565154290976114,
+            "bulk_row_tv_other": 0.20060845986790724
+          },
+          "steps": 179,
+          "stopped_early": true,
+          "final_loss": 0.01146282644376706,
+          "init_loss": 0.2868215579769949,
+          "wall_time": 4.988058805465698,
+          "settings": {
+            "steps_max": 800,
+            "lr": 0.03,
+            "eps": 0.01,
+            "noise": 0.2,
+            "sinkhorn_iters": 25,
+            "n_layers": 3,
+            "model": "single"
+          }
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "primary": {
+      "binary": {
+        "weighted_tv": {
+          "median": 0.2460493712142661,
+          "min": 0.23219696022638317,
+          "max": 0.2731284345479522
+        },
+        "tail_tv": {
+          "median": 0.37894636222188877,
+          "min": 0.3040228809283212,
+          "max": 0.40388696062803586
+        },
+        "stationary_tv": {
+          "median": 0.19281313175014714,
+          "min": 0.1752726331908932,
+          "max": 0.21368474750322985
+        },
+        "lag1_acf": {
+          "median": 0.9572971924979325,
+          "min": 0.933858345943776,
+          "max": 0.9636222255456135
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.6813346371901992,
+          "min": 0.6118742624037348,
+          "max": 0.6843212326233354
+        },
+        "slope": {
+          "median": 0.9244349312391644,
+          "min": 0.9230711799505924,
+          "max": 0.9298818785562697
+        },
+        "flux_ratio_depth5": {
+          "median": 0.002795938701850175,
+          "min": 0.002316359148078281,
+          "max": 0.0053236459898220135
+        },
+        "flux_ratio_depth4": {
+          "median": 0.06833195579051946,
+          "min": 0.06611746950446,
+          "max": 0.10013020507600127
+        },
+        "flux_ratio_depth3": {
+          "median": 0.8168655851898844,
+          "min": 0.7359726414318111,
+          "max": 0.9561925019180335
+        },
+        "flux_ratio_depth1-2": {
+          "median": 0.9955247368569948,
+          "min": 0.9824958898069518,
+          "max": 0.9990747267325023
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.2697951811041774,
+          "min": 0.26217675221666426,
+          "max": 0.29336126579096256
+        },
+        "bulk_row_tv_other": {
+          "median": 0.21044719370453874,
+          "min": 0.1790524878987599,
+          "max": 0.23388417843792128
+        },
+        "final_loss": {
+          "median": 0.00830827780863112,
+          "min": 0.007642564022246275,
+          "max": 0.010900527520393138
+        },
+        "steps": {
+          "median": 324.0,
+          "min": 269.0,
+          "max": 800.0
+        }
+      },
+      "gray": {
+        "weighted_tv": {
+          "median": 0.1788193399517623,
+          "min": 0.1705616434443109,
+          "max": 0.18595618966142202
+        },
+        "tail_tv": {
+          "median": 0.45319053060919634,
+          "min": 0.41270875967144843,
+          "max": 0.478564458210408
+        },
+        "stationary_tv": {
+          "median": 0.04719369713159427,
+          "min": 0.03800184661577792,
+          "max": 0.05464618064945512
+        },
+        "lag1_acf": {
+          "median": 0.8922714203902622,
+          "min": 0.8916216301215052,
+          "max": 0.9040637845670821
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.08403454352208606,
+          "min": 0.08291089629985415,
+          "max": 0.1378056125706461
+        },
+        "slope": {
+          "median": 0.9075353643729372,
+          "min": 0.9063278241168627,
+          "max": 0.9141834584634809
+        },
+        "flux_ratio_depth5": {
+          "median": 0.24643009016970358,
+          "min": 0.20884088575931853,
+          "max": 0.24861049471894986
+        },
+        "flux_ratio_depth4": {
+          "median": 0.35046864284086254,
+          "min": 0.2523592009783044,
+          "max": 0.37939859824240985
+        },
+        "flux_ratio_depth3": {
+          "median": 0.9464766015577076,
+          "min": 0.9412888588017263,
+          "max": 0.949017515741108
+        },
+        "flux_ratio_depth1-2": {
+          "median": 1.039229377776707,
+          "min": 1.0137542314168668,
+          "max": 1.0553937124298922
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.19977631474099716,
+          "min": 0.1913834054296115,
+          "max": 0.2022448836667473
+        },
+        "bulk_row_tv_other": {
+          "median": 0.14367985917035964,
+          "min": 0.13731386202766707,
+          "max": 0.15199183015206263
+        },
+        "final_loss": {
+          "median": 0.0052647282004848125,
+          "min": 0.004965234810629184,
+          "max": 0.005476663118672669
+        },
+        "steps": {
+          "median": 466.0,
+          "min": 395.0,
+          "max": 800.0
+        }
+      }
+    },
+    "converged-solver": {
+      "binary": {
+        "weighted_tv": {
+          "median": 0.23089884039524483,
+          "min": 0.20374100976853654,
+          "max": 0.24170643757766677
+        },
+        "tail_tv": {
+          "median": 0.33378152985596654,
+          "min": 0.2752556038914992,
+          "max": 0.34171280575108975
+        },
+        "stationary_tv": {
+          "median": 0.2371138127223522,
+          "min": 0.12308788388617356,
+          "max": 0.272916155452393
+        },
+        "lag1_acf": {
+          "median": 0.9676912177997784,
+          "min": 0.9477604725028558,
+          "max": 0.9728117361264108
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.7182181943464301,
+          "min": 0.6361910163846276,
+          "max": 0.742528061527705
+        },
+        "slope": {
+          "median": 0.9269471827840655,
+          "min": 0.9247852916485403,
+          "max": 0.932980240066001
+        },
+        "flux_ratio_depth5": {
+          "median": 0.005005436818314333,
+          "min": 0.0047866367528503345,
+          "max": 0.006726922974124759
+        },
+        "flux_ratio_depth4": {
+          "median": 0.056536916480937185,
+          "min": 0.053045342145327114,
+          "max": 0.07693363687642947
+        },
+        "flux_ratio_depth3": {
+          "median": 0.9607052033477564,
+          "min": 0.8907173862102503,
+          "max": 0.991575196843536
+        },
+        "flux_ratio_depth1-2": {
+          "median": 1.0020288739673606,
+          "min": 1.0012545503520696,
+          "max": 1.034926059743816
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.25105959563804126,
+          "min": 0.2209854444648679,
+          "max": 0.2572402840792596
+        },
+        "bulk_row_tv_other": {
+          "median": 0.19329367849297874,
+          "min": 0.16913145364921173,
+          "max": 0.2087670573474456
+        },
+        "final_loss": {
+          "median": 0.007640221368079271,
+          "min": 0.00763152019975329,
+          "max": 0.007853688918928663
+        },
+        "steps": {
+          "median": 800.0,
+          "min": 678.0,
+          "max": 800.0
+        }
+      },
+      "gray": {
+        "weighted_tv": {
+          "median": 0.16222160600392882,
+          "min": 0.16151540177439844,
+          "max": 0.16914083364700724
+        },
+        "tail_tv": {
+          "median": 0.447160552751217,
+          "min": 0.4118778877311111,
+          "max": 0.4526696167791295
+        },
+        "stationary_tv": {
+          "median": 0.037094539570633904,
+          "min": 0.03131865532654844,
+          "max": 0.038257125267971634
+        },
+        "lag1_acf": {
+          "median": 0.8921309391665931,
+          "min": 0.8915650602774499,
+          "max": 0.8966189322546763
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.08436244076078422,
+          "min": 0.08327940481462429,
+          "max": 0.11295714322385478
+        },
+        "slope": {
+          "median": 0.9059247665053934,
+          "min": 0.9049210059330236,
+          "max": 0.9080403483804308
+        },
+        "flux_ratio_depth5": {
+          "median": 0.2473768813347169,
+          "min": 0.22322136424377628,
+          "max": 0.24846591807251348
+        },
+        "flux_ratio_depth4": {
+          "median": 0.39938055814371004,
+          "min": 0.3741130970420555,
+          "max": 0.4640778700742297
+        },
+        "flux_ratio_depth3": {
+          "median": 0.9750374660378559,
+          "min": 0.9402097401984557,
+          "max": 0.9910334488511028
+        },
+        "flux_ratio_depth1-2": {
+          "median": 1.0395136231270836,
+          "min": 1.0330736232155133,
+          "max": 1.0405820700628552
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.18958322419832654,
+          "min": 0.1887515691612474,
+          "max": 0.19238181683576325
+        },
+        "bulk_row_tv_other": {
+          "median": 0.12214769461105332,
+          "min": 0.11521540469495183,
+          "max": 0.1371251951300914
+        },
+        "final_loss": {
+          "median": 0.004842170685738285,
+          "min": 0.0047452256088838345,
+          "max": 0.004949021670555703
+        },
+        "steps": {
+          "median": 800.0,
+          "min": 700.0,
+          "max": 800.0
+        }
+      }
+    },
+    "diagnostic/eps0.005": {
+      "binary": {
+        "weighted_tv": {
+          "median": 0.33013693150121004,
+          "min": 0.3099577279824141,
+          "max": 0.364750315979011
+        },
+        "tail_tv": {
+          "median": 0.45315339863603865,
+          "min": 0.36583298797925495,
+          "max": 0.6048530266095071
+        },
+        "stationary_tv": {
+          "median": 0.2272962786045394,
+          "min": 0.18408290845467318,
+          "max": 0.365229659098818
+        },
+        "lag1_acf": {
+          "median": 0.9492720167227385,
+          "min": 0.9318910818981643,
+          "max": 0.9594751948273902
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.6792058101632734,
+          "min": 0.5794483792632432,
+          "max": 0.6825990476407393
+        },
+        "slope": {
+          "median": 0.9445801743202262,
+          "min": 0.9385541153758747,
+          "max": 0.9461161177513134
+        },
+        "flux_ratio_depth5": {
+          "median": 0.004107474856757479,
+          "min": 0.00335325701174772,
+          "max": 0.004200503347270055
+        },
+        "flux_ratio_depth4": {
+          "median": 0.035041612964485665,
+          "min": 0.030704743711040434,
+          "max": 0.10722345041631456
+        },
+        "flux_ratio_depth3": {
+          "median": 0.6418368420202908,
+          "min": 0.3646718449431533,
+          "max": 0.8671525525686811
+        },
+        "flux_ratio_depth1-2": {
+          "median": 1.0154710374488154,
+          "min": 0.9149471101768492,
+          "max": 1.1872440595318055
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.3686527299878596,
+          "min": 0.3654713781932503,
+          "max": 0.3774424001174206
+        },
+        "bulk_row_tv_other": {
+          "median": 0.27066365212823973,
+          "min": 0.24163379433133692,
+          "max": 0.34107254893515765
+        },
+        "final_loss": {
+          "median": 0.020738908689526526,
+          "min": 0.014889354206867758,
+          "max": 0.020800580636726247
+        },
+        "steps": {
+          "median": 232.0,
+          "min": 203.0,
+          "max": 270.0
+        }
+      },
+      "gray": {
+        "weighted_tv": {
+          "median": 0.25748323406358936,
+          "min": 0.22367950092617628,
+          "max": 0.2629820600535851
+        },
+        "tail_tv": {
+          "median": 0.42448722874370154,
+          "min": 0.4007609733675103,
+          "max": 0.49017479335671543
+        },
+        "stationary_tv": {
+          "median": 0.07540168781238843,
+          "min": 0.0632498868616134,
+          "max": 0.07624662349933722
+        },
+        "lag1_acf": {
+          "median": 0.8910543606852585,
+          "min": 0.8580288329053654,
+          "max": 0.9158820523145152
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.09830877032170715,
+          "min": 0.06533549913350911,
+          "max": 0.16263128991448517
+        },
+        "slope": {
+          "median": 0.9103446907424839,
+          "min": 0.883360635658614,
+          "max": 0.9261808149656645
+        },
+        "flux_ratio_depth5": {
+          "median": 0.25441836621755337,
+          "min": 0.2264830590955884,
+          "max": 0.30203051746077947
+        },
+        "flux_ratio_depth4": {
+          "median": 0.15698848289600847,
+          "min": 0.14789613021012568,
+          "max": 0.328858335399938
+        },
+        "flux_ratio_depth3": {
+          "median": 1.0989202146328378,
+          "min": 1.0144710534573036,
+          "max": 1.3401258392528776
+        },
+        "flux_ratio_depth1-2": {
+          "median": 1.0374741285433204,
+          "min": 0.9942608201690211,
+          "max": 1.2700535882315946
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.2515918035234585,
+          "min": 0.2356119601978533,
+          "max": 0.25911861511065915
+        },
+        "bulk_row_tv_other": {
+          "median": 0.25177035710962276,
+          "min": 0.19470074814198887,
+          "max": 0.2574069927790831
+        },
+        "final_loss": {
+          "median": 0.011646813532450574,
+          "min": 0.00930646384359952,
+          "max": 0.013175815852416136
+        },
+        "steps": {
+          "median": 343.0,
+          "min": 292.0,
+          "max": 367.0
+        }
+      }
+    },
+    "diagnostic/noise0.1": {
+      "binary": {
+        "weighted_tv": {
+          "median": 0.23912615914878455,
+          "min": 0.23171992092699212,
+          "max": 0.2515916883651058
+        },
+        "tail_tv": {
+          "median": 0.29806225131762176,
+          "min": 0.28401094799380433,
+          "max": 0.3047725238481639
+        },
+        "stationary_tv": {
+          "median": 0.09811338836923124,
+          "min": 0.08416909503509312,
+          "max": 0.12747964871986706
+        },
+        "lag1_acf": {
+          "median": 0.9335167528408886,
+          "min": 0.933160506070891,
+          "max": 0.933804387572693
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.5950491995539109,
+          "min": 0.593807413255427,
+          "max": 0.5952086297643706
+        },
+        "slope": {
+          "median": 0.9365267577820839,
+          "min": 0.9342431388372597,
+          "max": 0.9387794018306123
+        },
+        "flux_ratio_depth5": {
+          "median": 0.0019016214899979654,
+          "min": 0.0010282985646932663,
+          "max": 0.003958728067778352
+        },
+        "flux_ratio_depth4": {
+          "median": 0.024220714450078718,
+          "min": 0.023220215202348175,
+          "max": 0.03227047381400756
+        },
+        "flux_ratio_depth3": {
+          "median": 0.8607836855158588,
+          "min": 0.8591984617048849,
+          "max": 0.8941181742294435
+        },
+        "flux_ratio_depth1-2": {
+          "median": 0.9750248053575465,
+          "min": 0.9699014398832437,
+          "max": 1.0198619440563177
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.2754690448117472,
+          "min": 0.26367995315335546,
+          "max": 0.2880276066773367
+        },
+        "bulk_row_tv_other": {
+          "median": 0.18848521866755624,
+          "min": 0.18343094770509974,
+          "max": 0.20168521349177732
+        },
+        "final_loss": {
+          "median": 0.008730896361876468,
+          "min": 0.008409080576550931,
+          "max": 0.009314251592223141
+        },
+        "steps": {
+          "median": 358.0,
+          "min": 267.0,
+          "max": 447.0
+        }
+      },
+      "gray": {
+        "weighted_tv": {
+          "median": 0.1857551160601197,
+          "min": 0.1792852335552285,
+          "max": 0.19022414231684415
+        },
+        "tail_tv": {
+          "median": 0.43394530603114434,
+          "min": 0.4334783515494581,
+          "max": 0.47996020873283507
+        },
+        "stationary_tv": {
+          "median": 0.05175520329436056,
+          "min": 0.048889651005397376,
+          "max": 0.05512369468756957
+        },
+        "lag1_acf": {
+          "median": 0.895115489549746,
+          "min": 0.8904732187111031,
+          "max": 0.9006482052536522
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.11898929519741586,
+          "min": 0.08398442921474722,
+          "max": 0.12581741531614302
+        },
+        "slope": {
+          "median": 0.9082111265760144,
+          "min": 0.9063862324139161,
+          "max": 0.914458770548924
+        },
+        "flux_ratio_depth5": {
+          "median": 0.2157465722195904,
+          "min": 0.19576132267230142,
+          "max": 0.2440883310146439
+        },
+        "flux_ratio_depth4": {
+          "median": 0.3740055990403209,
+          "min": 0.328784689934415,
+          "max": 0.5172352760839223
+        },
+        "flux_ratio_depth3": {
+          "median": 0.9532355000059267,
+          "min": 0.9055169455256751,
+          "max": 0.9681186892315309
+        },
+        "flux_ratio_depth1-2": {
+          "median": 1.0173451405089726,
+          "min": 0.9856799819596114,
+          "max": 1.0551892582939832
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.2070273110822098,
+          "min": 0.20251596054325835,
+          "max": 0.21071595653825534
+        },
+        "bulk_row_tv_other": {
+          "median": 0.15329636020492765,
+          "min": 0.1403689305682891,
+          "max": 0.16169520924341815
+        },
+        "final_loss": {
+          "median": 0.00541421989493544,
+          "min": 0.005271967658568685,
+          "max": 0.005612534747923548
+        },
+        "steps": {
+          "median": 437.0,
+          "min": 428.0,
+          "max": 571.0
+        }
+      }
+    },
+    "diagnostic/layers4": {
+      "binary": {
+        "weighted_tv": {
+          "median": 0.24680887422526837,
+          "min": 0.23992634572552307,
+          "max": 0.25316116678560263
+        },
+        "tail_tv": {
+          "median": 0.297587151625784,
+          "min": 0.2873942072076219,
+          "max": 0.33418879317677586
+        },
+        "stationary_tv": {
+          "median": 0.16724240656308598,
+          "min": 0.11328210584338597,
+          "max": 0.39424527249290164
+        },
+        "lag1_acf": {
+          "median": 0.9403005311260381,
+          "min": 0.9322210936763089,
+          "max": 0.9790631134091632
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.6050570339524539,
+          "min": 0.5488599308504545,
+          "max": 0.7826347084955287
+        },
+        "slope": {
+          "median": 0.9339251593178516,
+          "min": 0.92471995867079,
+          "max": 0.9396558540177568
+        },
+        "flux_ratio_depth5": {
+          "median": 0.004525502549437644,
+          "min": 0.0040100826325476435,
+          "max": 0.004908597564344878
+        },
+        "flux_ratio_depth4": {
+          "median": 0.04006867877114233,
+          "min": 0.037466788858996014,
+          "max": 0.041704503485114466
+        },
+        "flux_ratio_depth3": {
+          "median": 0.89342783022315,
+          "min": 0.8339701457463051,
+          "max": 0.9098931253144599
+        },
+        "flux_ratio_depth1-2": {
+          "median": 1.0094918503333121,
+          "min": 0.9907052683502996,
+          "max": 1.0229897630970617
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.285171515128597,
+          "min": 0.26921743478078203,
+          "max": 0.2882763748770254
+        },
+        "bulk_row_tv_other": {
+          "median": 0.19483955786464488,
+          "min": 0.19385388933171557,
+          "max": 0.20357609961315318
+        },
+        "final_loss": {
+          "median": 0.009088389121766467,
+          "min": 0.007969578262746309,
+          "max": 0.009856219607309556
+        },
+        "steps": {
+          "median": 536.0,
+          "min": 460.0,
+          "max": 682.0
+        }
+      },
+      "gray": {
+        "weighted_tv": {
+          "median": 0.17590871282577947,
+          "min": 0.17135498391366788,
+          "max": 0.1845244407284763
+        },
+        "tail_tv": {
+          "median": 0.4433799635203065,
+          "min": 0.4356676659009435,
+          "max": 0.44553846114484263
+        },
+        "stationary_tv": {
+          "median": 0.045232070642763966,
+          "min": 0.042042482706975075,
+          "max": 0.04848041090554716
+        },
+        "lag1_acf": {
+          "median": 0.891257787451135,
+          "min": 0.8886937762999028,
+          "max": 0.897490582375327
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.08280502119860617,
+          "min": 0.07736211894506154,
+          "max": 0.08533044184485383
+        },
+        "slope": {
+          "median": 0.9065531159156184,
+          "min": 0.9050815806450285,
+          "max": 0.9085543018676911
+        },
+        "flux_ratio_depth5": {
+          "median": 0.2536396569225004,
+          "min": 0.24812814693349233,
+          "max": 0.254735686877841
+        },
+        "flux_ratio_depth4": {
+          "median": 0.39123105710384765,
+          "min": 0.3663879474168886,
+          "max": 0.506121190206178
+        },
+        "flux_ratio_depth3": {
+          "median": 0.9340103865242838,
+          "min": 0.8992270051529316,
+          "max": 0.9353259788035055
+        },
+        "flux_ratio_depth1-2": {
+          "median": 1.0415046716907181,
+          "min": 1.0216188502164154,
+          "max": 1.0519207755544497
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.20173575812757155,
+          "min": 0.1964174778004821,
+          "max": 0.21055521614942385
+        },
+        "bulk_row_tv_other": {
+          "median": 0.13765874383700788,
+          "min": 0.135901899896975,
+          "max": 0.14511028735994147
+        },
+        "final_loss": {
+          "median": 0.005191893809275282,
+          "min": 0.004942567644332107,
+          "max": 0.0053735317454772676
+        },
+        "steps": {
+          "median": 529.0,
+          "min": 282.0,
+          "max": 800.0
+        }
+      }
+    },
+    "single_register": {
+      "binary": {
+        "weighted_tv": {
+          "median": 0.29440227967087673,
+          "min": 0.2938968435441235,
+          "max": 0.2957816798162589
+        },
+        "tail_tv": {
+          "median": 0.39792988422890185,
+          "min": 0.39776337892981695,
+          "max": 0.39872130163810293
+        },
+        "stationary_tv": {
+          "median": 0.5086781363640227,
+          "min": 0.5086781363639485,
+          "max": 0.5086781363641375
+        },
+        "lag1_acf": {
+          "median": 0.9887201829436131,
+          "min": 0.9885443867890399,
+          "max": 0.9887604205826902
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.7937451447084327,
+          "min": 0.7890358151281047,
+          "max": 0.7953231374479761
+        },
+        "slope": {
+          "median": 0.9931952113017386,
+          "min": 0.9914159742517985,
+          "max": 0.9933905665941487
+        },
+        "flux_ratio_depth5": {
+          "median": 0.0005336327959687249,
+          "min": 0.00014166218088550357,
+          "max": 0.009712845396861007
+        },
+        "flux_ratio_depth4": {
+          "median": 0.05224969308514693,
+          "min": 0.046580330646102126,
+          "max": 0.05343756143431947
+        },
+        "flux_ratio_depth3": {
+          "median": 0.7269355333259361,
+          "min": 0.7242953981262419,
+          "max": 0.7277296980867433
+        },
+        "flux_ratio_depth1-2": {
+          "median": 0.9182911537686721,
+          "min": 0.9177332538757627,
+          "max": 0.9212341583399165
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.3084504088400219,
+          "min": 0.30777857215366494,
+          "max": 0.31017369347284907
+        },
+        "bulk_row_tv_other": {
+          "median": 0.26528126724723017,
+          "min": 0.2648935145846115,
+          "max": 0.2664369516158524
+        },
+        "final_loss": {
+          "median": 0.012035454697845269,
+          "min": 0.011970418091926338,
+          "max": 0.012036655120471279
+        },
+        "steps": {
+          "median": 800.0,
+          "min": 582.0,
+          "max": 800.0
+        }
+      },
+      "gray": {
+        "weighted_tv": {
+          "median": 0.25085463162338173,
+          "min": 0.24529101696363143,
+          "max": 0.2651093239058019
+        },
+        "tail_tv": {
+          "median": 0.36424380509650656,
+          "min": 0.3625198998868308,
+          "max": 0.3988256205875852
+        },
+        "stationary_tv": {
+          "median": 0.5086781363639696,
+          "min": 0.5086781363639686,
+          "max": 0.5086781363640922
+        },
+        "lag1_acf": {
+          "median": 0.9887927150753957,
+          "min": 0.9883671322639841,
+          "max": 0.9889519277672333
+        },
+        "lag1_acf_exact": {
+          "median": 0.9048120579807226,
+          "min": 0.9048120579807226,
+          "max": 0.9048120579807226
+        },
+        "acf_err": {
+          "median": 0.7911720239294675,
+          "min": 0.7894266481802723,
+          "max": 0.7915354993181871
+        },
+        "slope": {
+          "median": 0.9913093131451853,
+          "min": 0.990801504546219,
+          "max": 0.9937795013126481
+        },
+        "flux_ratio_depth5": {
+          "median": 0.015886439823522374,
+          "min": 0.005155598559808205,
+          "max": 0.017127285651681295
+        },
+        "flux_ratio_depth4": {
+          "median": 0.029043272676737862,
+          "min": 0.026066898197159558,
+          "max": 0.03027614941992801
+        },
+        "flux_ratio_depth3": {
+          "median": 0.7534958410594729,
+          "min": 0.7104835324344708,
+          "max": 0.7595980823127203
+        },
+        "flux_ratio_depth1-2": {
+          "median": 0.9513529473939584,
+          "min": 0.9506721625783655,
+          "max": 0.9588809341522505
+        },
+        "bulk_row_tv_near_deep": {
+          "median": 0.2768692067662248,
+          "min": 0.2761415591512718,
+          "max": 0.28565154290976114
+        },
+        "bulk_row_tv_other": {
+          "median": 0.20060845986790724,
+          "min": 0.19867999556605953,
+          "max": 0.23496580973490477
+        },
+        "final_loss": {
+          "median": 0.01146282644376706,
+          "min": 0.011167982133439676,
+          "max": 0.011800727547090002
+        },
+        "steps": {
+          "median": 476.0,
+          "min": 179.0,
+          "max": 800.0
+        }
+      }
+    }
+  },
+  "go_no_go": {
+    "primary": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "weighted_tv_spread": 0.1634263333333315,
+        "spread_pass": true,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": true,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": true
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": true,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": true
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 2,
+        "weighted_tv_spread": 0.08627018816489553,
+        "spread_pass": true,
+        "go": true
+      }
+    },
+    "converged-solver": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "weighted_tv_spread": 0.16839936211926199,
+        "spread_pass": true,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": true,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": true
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": true,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": true
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": true,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": true
+          }
+        },
+        "n_seeds_passing": 3,
+        "weighted_tv_spread": 0.046413723026523857,
+        "spread_pass": true,
+        "go": true
+      }
+    },
+    "diagnostic/eps0.005": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "weighted_tv_spread": 0.16358519772078312,
+        "spread_pass": true,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "weighted_tv_spread": 0.1584472244751207,
+        "spread_pass": true,
+        "go": false
+      }
+    },
+    "diagnostic/noise0.1": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "weighted_tv_spread": 0.08251963687197432,
+        "spread_pass": true,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": true,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": true
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 1,
+        "weighted_tv_spread": 0.059101071222206786,
+        "spread_pass": true,
+        "go": false
+      }
+    },
+    "diagnostic/layers4": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "weighted_tv_spread": 0.05366219364223541,
+        "spread_pass": true,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": true,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": true
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": true,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": true
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": true,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": true
+          }
+        },
+        "n_seeds_passing": 3,
+        "weighted_tv_spread": 0.0742934406783534,
+        "spread_pass": true,
+        "go": true
+      }
+    },
+    "single_register": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "weighted_tv_spread": 0.006395918559727338,
+        "spread_pass": true,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv_vs_iid": true
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "weighted_tv_spread": 0.07810119207736607,
+        "spread_pass": true,
+        "go": false
+      }
+    }
+  },
+  "tight": {
+    "primary": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      }
+    },
+    "converged-solver": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      }
+    },
+    "diagnostic/eps0.005": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      }
+    },
+    "diagnostic/noise0.1": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      }
+    },
+    "diagnostic/layers4": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": true,
+              "slope": true,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      }
+    },
+    "single_register": {
+      "binary": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      },
+      "gray": {
+        "seeds": {
+          "seed0": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed1": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          },
+          "seed2": {
+            "checks": {
+              "stationary_tv": false,
+              "lag1_acf": false,
+              "slope": false,
+              "weighted_tv": false
+            },
+            "pass": false
+          }
+        },
+        "n_seeds_passing": 0,
+        "go": false
+      }
+    }
+  },
+  "median_seed": {
+    "primary": {
+      "binary": 1,
+      "gray": 0
+    },
+    "converged-solver": {
+      "binary": 2,
+      "gray": 0
+    },
+    "diagnostic/eps0.005": {
+      "binary": 1,
+      "gray": 0
+    },
+    "diagnostic/noise0.1": {
+      "binary": 1,
+      "gray": 2
+    },
+    "diagnostic/layers4": {
+      "binary": 0,
+      "gray": 0
+    },
+    "single_register": {
+      "binary": 2,
+      "gray": 2
+    }
+  },
+  "single_register": {
+    "tv_uniform_vs_pi_star": 0.5086781363639574,
+    "runs": {
+      "binary": {
+        "seed0": {
+          "row_sum_err": 8.881784197001252e-16,
+          "col_sum_err": 6.661338147750939e-16,
+          "stationary_max_dev_from_uniform": 3.1884217488453714e-14
+        },
+        "seed1": {
+          "row_sum_err": 7.771561172376096e-16,
+          "col_sum_err": 6.661338147750939e-16,
+          "stationary_max_dev_from_uniform": 1.6565290805736765e-12
+        },
+        "seed2": {
+          "row_sum_err": 1.9984014443252818e-15,
+          "col_sum_err": 1.5543122344752192e-15,
+          "stationary_max_dev_from_uniform": 5.150047055479945e-14
+        }
+      },
+      "gray": {
+        "seed0": {
+          "row_sum_err": 1.5543122344752192e-15,
+          "col_sum_err": 8.881784197001252e-16,
+          "stationary_max_dev_from_uniform": 8.520961713998076e-15
+        },
+        "seed1": {
+          "row_sum_err": 1.3322676295501878e-15,
+          "col_sum_err": 1.1102230246251565e-15,
+          "stationary_max_dev_from_uniform": 5.5018489764080414e-14
+        },
+        "seed2": {
+          "row_sum_err": 1.3322676295501878e-15,
+          "col_sum_err": 1.1102230246251565e-15,
+          "stationary_max_dev_from_uniform": 2.2148949341271873e-14
+        }
+      }
+    }
+  },
+  "verdict": {
+    "primary": {
+      "go": true,
+      "go_encodings": [
+        "gray"
+      ]
+    },
+    "converged-solver": {
+      "go": true,
+      "go_encodings": [
+        "gray"
+      ]
+    }
+  },
+  "verdict_tight": {
+    "primary": {
+      "go": false,
+      "go_encodings": []
+    },
+    "converged-solver": {
+      "go": false,
+      "go_encodings": []
+    }
+  }
+}

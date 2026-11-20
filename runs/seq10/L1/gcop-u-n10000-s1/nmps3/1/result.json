@@ -1,0 +1,25 @@
+{
+ "train_ll": -3.974982941028898,
+ "lbfgs_iters": 1396,
+ "capped": false,
+ "lbfgs_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+ "n_params": 120,
+ "kl": 0.07349187317451392,
+ "0.05": {
+  "ckl": 0.014106189770096714,
+  "joint_ratio": 0.5920914701359622,
+  "joint_mass": 0.005640557913275192,
+  "ratio": 1.0952910666767894
+ },
+ "0.01": {
+  "ckl": 0.007239142684672157,
+  "joint_ratio": 0.2611464157041745,
+  "joint_mass": 0.0007479526770556825,
+  "ratio": 1.048339851256376
+ },
+ "level": 1,
+ "dataset": "gcop-u-n10000-s1",
+ "model": "nmps3",
+ "init": 1,
+ "wall_time": 18.54931116104126
+}

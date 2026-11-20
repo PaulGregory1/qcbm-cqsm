@@ -1,0 +1,17 @@
+{
+ "em_iters": 135,
+ "stop_iter": 10,
+ "train_ll_em": -4.59674683037386,
+ "n_params": 131072,
+ "fit_ll": -4.657684564622919,
+ "train_ll": -4.657487531684069,
+ "val_ll": -5.577808759875224,
+ "test_ll": -5.570362525267091,
+ "part": "real",
+ "dataset": "eurjpy-q",
+ "model": "iohmm-fact-S2",
+ "init": 2,
+ "stage": 1,
+ "wall_time": 136.8337426185608,
+ "device": "cpu"
+}

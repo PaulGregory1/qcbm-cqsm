@@ -1,0 +1,14 @@
+{
+ "n_params": 65280,
+ "fit_ll": -4.165689296504865,
+ "train_ll": -4.165562646283047,
+ "val_ll": -4.741440758917931,
+ "test_ll": -4.496392368987232,
+ "part": "real",
+ "dataset": "eurgbp-v",
+ "model": "markov1",
+ "init": 0,
+ "stage": 1,
+ "wall_time": 3.4481253623962402,
+ "device": "cpu"
+}

@@ -1,0 +1,25 @@
+{
+ "train_ll": -4.6536276508075485,
+ "lbfgs_iters": 2000,
+ "capped": false,
+ "lbfgs_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+ "n_params": 152,
+ "kl": 0.0013027826930825002,
+ "0.05": {
+  "ckl": 0.00041956428245993753,
+  "joint_ratio": 0.9813327134688536,
+  "joint_mass": 0.007829069459595262,
+  "ratio": 1.0008911330030759
+ },
+ "0.01": {
+  "ckl": 0.00028101061364714053,
+  "joint_ratio": 0.9485784528550861,
+  "joint_mass": 0.0013027553115662251,
+  "ratio": 1.0160489355467928
+ },
+ "level": 1,
+ "dataset": "tcop-g-n100000-s0",
+ "model": "rbm16",
+ "init": 1,
+ "wall_time": 13.875802755355835
+}
